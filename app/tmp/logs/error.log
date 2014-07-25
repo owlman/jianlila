@@ -1,0 +1,44 @@
+2014-07-24 15:01:00 Error: [MissingActionException] Action AppController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'index',
+)
+Request URL: /app/
+Stack Trace:
+#0 E:\百度云同步盘\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\百度云同步盘\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 E:\百度云同步盘\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\百度云同步盘\code\studyWeb\cakephp\app\index.php(17): require('E:\\\xB0\xD9\xB6\xC8\xD4\xC6\xCD\xAC\xB2\xBD\xC5\xCC...')
+#4 {main}
+2014-07-24 15:03:56 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /app/webroot/
+Stack Trace:
+#0 E:\百度云同步盘\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\百度云同步盘\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 E:\百度云同步盘\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-24 20:08:52 Error: [MissingActionException] Action AppController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'index',
+)
+Request URL: /cakephp/app/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 E:\baidudoc\code\studyWeb\cakephp\app\index.php(17): require('E:\\baidudoc\\cod...')
+#4 {main}
+2014-07-24 20:09:05 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/app//webroot/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
