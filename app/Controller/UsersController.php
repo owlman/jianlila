@@ -20,7 +20,7 @@ class UsersController extends AppController{
 				$this->Session->setFlash('add user!');  
 				$this->redirect(array('action' => 'index'));  
 			} else {  
-				$this->Session->setFlash('add Error£¡');  
+				$this->Session->setFlash('add Error!');  
 			}  
 		}
 	}
@@ -44,9 +44,13 @@ class UsersController extends AppController{
 		if ($this->request->is('get')) { 
 			throw new MethodNotAllowedException();
 		} if ($this->User->delete($id)) { 
-			$this->Session->setFlash('The user ' . $user["User"]["username"] . 'has be remove!'); 
+			$this->Session->setFlash('The user:' . $user["User"]["username"] . ' has be remove!'); 
 			$this->redirect(array('action' => 'index')); 
 		}
 	}
+//	public function login(){
+//		$this->set("error",false);
+		
+//	}
 };
 ?>

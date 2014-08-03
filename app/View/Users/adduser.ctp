@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
- <!-- File: /app/View/User/adduser.ctp -->
+﻿ <!-- File: /app/View/User/adduser.ctp -->
 <h1>注册新用户</h1>
 <?php
   echo $this->Form->create("User");

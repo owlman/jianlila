@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!-- File: /app/View/User/index.ctp -->
 <h1>用户列表</h1>
 <p><?php echo $this->Html->link(

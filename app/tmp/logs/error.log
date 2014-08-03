@@ -434,3 +434,203 @@ Stack Trace:
 #3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-08-03 13:55:44 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('all', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(7): Model->find('all')
+#8 [internal function]: UsersController->index()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-03 13:56:15 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('all', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(7): Model->find('all')
+#8 [internal function]: UsersController->index()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-03 14:00:25 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('all', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(7): Model->find('all')
+#8 [internal function]: UsersController->index()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-03 14:34:58 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('all', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(7): Model->find('all')
+#8 [internal function]: UsersController->index()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-03 15:06:18 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test2-avc@owlman.org' for key 'username'
+Request URL: /cakephp/Users/adduser
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `li...', Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `li...')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1850): DboSource->create(Object(User), Array, Array)
+#4 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->save(Array)
+#5 [internal function]: UsersController->adduser()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-03 15:15:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test2-avc@owlman.org' for key 'username'
+Request URL: /cakephp/Users/adduser
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `li...', Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `li...')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1850): DboSource->create(Object(User), Array, Array)
+#4 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->save(Array)
+#5 [internal function]: UsersController->adduser()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-03 15:29:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'findCount' at line 1
+Request URL: /cakephp/Users/adduser
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('findCount', Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(666): DboSource->execute('findCount', Array, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('findCount', Array, Array)
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(808): DboSource->query('findCount', Array, Object(User))
+#5 E:\baidudoc\code\studyWeb\cakephp\app\Model\User.php(11): Model->__call('findCount', Array)
+#6 E:\baidudoc\code\studyWeb\cakephp\app\Model\User.php(11): User->findCount(Array)
+#7 [internal function]: User->beforeValidate(Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Event\CakeEventManager.php(240): call_user_func_array(Array, Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ModelValidator.php(452): CakeEventManager->dispatch(Object(CakeEvent))
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ModelValidator.php(241): ModelValidator->_triggerBeforeValidate(Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ModelValidator.php(99): ModelValidator->errors(Array)
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3341): ModelValidator->validates(Array)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1754): Model->validates(Array)
+#14 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->save(Array)
+#15 [internal function]: UsersController->adduser()
+#16 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#17 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#19 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2014-08-03 15:56:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test2-avc@owlman.org' for key 'username'
+Request URL: /cakephp/Users/adduser
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `li...', Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `li...')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1850): DboSource->create(Object(User), Array, Array)
+#4 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->save(Array)
+#5 [internal function]: UsersController->adduser()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-03 15:56:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test2-avc@owlman.org' for key 'username'
+Request URL: /cakephp/Users/adduser
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `li...', Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `li...')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1850): DboSource->create(Object(User), Array, Array)
+#4 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->save(Array)
+#5 [internal function]: UsersController->adduser()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-03 16:15:20 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test2-avc@owlman.org' for key 'username'
+Request URL: /cakephp/Users/adduser
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `li...', Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `li...')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1850): DboSource->create(Object(User), Array, Array)
+#4 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->save(Array)
+#5 [internal function]: UsersController->adduser()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-03 16:15:35 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test2-avc@owlman.org' for key 'username'
+Request URL: /cakephp/Users/adduser
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `li...', Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `li...')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1850): DboSource->create(Object(User), Array, Array)
+#4 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->save(Array)
+#5 [internal function]: UsersController->adduser()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

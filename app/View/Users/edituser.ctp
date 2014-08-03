@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
  <!-- File: /app/View/User/edituser.ctp -->
 <h1>编辑 <?php echo $user["User"]["username"];?> 的用户信息</h1>
 <?php

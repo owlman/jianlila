@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!-- File: /app/View/User/usermsg.ctp -->  
 <h1>用户信息</h1>
 <p><?php
