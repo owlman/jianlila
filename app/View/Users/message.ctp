@@ -3,14 +3,18 @@
 <p><?php
       echo $this->Html->link(
            "编辑",
-           array("controller"=>"Users", "action"=>"edituser",$user["User"]["id"])
+           array("controller"=>"Users", "action"=>"edit",$user["User"]["id"])
       );
       echo " | ";
       echo $this->Html->link(
            "删除",
-           array('controller' => 'Users', 'action' => 'deleteuser', $user["User"]["id"])
+           array("controller" => "Users", "action" => "delete", $user["User"]["id"])
       );
-
+      echo " | ";
+      echo $this->Html->link(
+           "登出",
+           array("controller" => "Users", "action" => "logout")
+      );
 ?></p>
 
 <table>		

@@ -634,3 +634,416 @@ Stack Trace:
 #8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2014-08-05 14:54:01 Error: Fatal Error (4): syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 6]
+2014-08-05 14:54:01 Error: [FatalErrorException] syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING)
+Request URL: /cakephp/users/list
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 14:54:52 Error: Fatal Error (4): syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 6]
+2014-08-05 14:54:52 Error: [FatalErrorException] syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING)
+Request URL: /cakephp/users/list
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 14:55:12 Error: Fatal Error (4): syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 6]
+2014-08-05 14:55:12 Error: [FatalErrorException] syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING)
+Request URL: /cakephp/users/list
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 14:57:39 Error: Fatal Error (4): syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 6]
+2014-08-05 14:57:39 Error: [FatalErrorException] syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 14:57:46 Error: Fatal Error (4): syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 6]
+2014-08-05 14:57:46 Error: [FatalErrorException] syntax error, unexpected 'list' (T_LIST), expecting identifier (T_STRING)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 6, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 15:01:15 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 15:24:36 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 53]
+2014-08-05 15:24:36 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 15:36:06 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 53]
+2014-08-05 15:36:06 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 15:36:42 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 53]
+2014-08-05 15:36:42 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 15:36:47 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 53]
+2014-08-05 15:36:47 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 15:36:49 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 53]
+2014-08-05 15:36:49 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 15:37:20 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 53]
+2014-08-05 15:37:20 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 15:37:22 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 53]
+2014-08-05 15:37:22 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 15:40:15 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 53]
+2014-08-05 15:40:15 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 15:40:17 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 53]
+2014-08-05 15:40:17 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 53, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:06:05 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 54]
+2014-08-05 16:06:05 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 54)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 54, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 54, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:07:19 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 54]
+2014-08-05 16:07:19 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 54)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 54, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 54, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:08:39 Error: Fatal Error (64): Can't use method return value in write context in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 54]
+2014-08-05 16:08:39 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 54)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 54, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'E:\\baidudoc\\cod...', 54, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:10:56 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 54]
+2014-08-05 16:10:56 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:11:54 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 54]
+2014-08-05 16:11:54 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:16:00 Error: Fatal Error (4): syntax error, unexpected '{' in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 54]
+2014-08-05 16:16:00 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:16:19 Error: Fatal Error (4): syntax error, unexpected '{' in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 54]
+2014-08-05 16:16:19 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 54, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:16:28 Error: Fatal Error (1): Call to undefined method SessionComponent::set() in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 52]
+2014-08-05 16:16:28 Error: [FatalErrorException] Call to undefined method SessionComponent::set()
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 52, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 52, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:17:58 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\index.ctp(7): FormHelper->create('User')
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-05 16:32:54 Error: [MissingActionException] Action UsersController::usermsg() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'usermsg',
+)
+Request URL: /cakephp/Users/usermsg/7
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 16:34:08 Error: [MissingActionException] Action UsersController::usermsg() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'usermsg',
+)
+Request URL: /cakephp/Users/usermsg/7
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 16:34:15 Error: [MissingActionException] Action UsersController::usermsg() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'usermsg',
+)
+Request URL: /cakephp/Users/usermsg/7
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 16:34:41 Error: [MissingActionException] Action UsersController::edituser() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'edituser',
+)
+Request URL: /cakephp/Users/edituser/7
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 16:34:45 Error: [MissingActionException] Action UsersController::edituser() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'edituser',
+)
+Request URL: /cakephp/Users/edituser/7
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 16:44:00 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-05 16:44:00 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /cakephp/Users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:51:47 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 57]
+2014-08-05 16:51:47 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 57, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 57, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 16:52:08 Error: Fatal Error (4): syntax error, unexpected 'if' (T_IF) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 57]
+2014-08-05 16:52:08 Error: [FatalErrorException] syntax error, unexpected 'if' (T_IF)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 57, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 57, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 17:41:01 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/users/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-05 17:42:20 Error: [MissingActionException] Action UsersController::massge() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'massge',
+)
+Request URL: /cakephp/users/massge/7
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 18:22:18 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 83]
+2014-08-05 18:22:18 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/users/message
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 83, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 83, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 18:22:24 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 83]
+2014-08-05 18:22:24 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 83, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 83, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 18:23:03 Error: [MissingActionException] Action UsersController::l() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'l',
+)
+Request URL: /cakephp/users/l
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-05 18:24:25 Error: Fatal Error (1): Call to a member function read() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 83]
+2014-08-05 18:24:25 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /cakephp/users
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 83, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 83, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-05 18:24:25 Error: Fatal Error (1): Call to a member function read() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 83]
+2014-08-05 18:24:25 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /cakephp/users
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 83)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 83, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 83, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

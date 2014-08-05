@@ -1,4 +1,4 @@
-﻿ <!-- File: /app/View/User/adduser.ctp -->
+﻿ <!-- File: /app/View/User/add.ctp -->
 <h1>注册新用户</h1>
 <?php
   echo $this->Form->create("User");
