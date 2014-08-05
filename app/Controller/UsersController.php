@@ -18,7 +18,7 @@
 		public function add() {
 			if($this->request->is("post")) {
 				if($this->User->save(($this->request->data))) {  
-					$this->Session->setFlash("add user!");  
+					$this->Session->setFlash("The user has be added, to do login it!");  
 					$this->redirect(array("action" => "index"));  
 				} else {  
 					$this->Session->setFlash("add Error!");  
@@ -33,7 +33,7 @@
 			} else {
 				if ($this->User->save($this->request->data)) { 
 					$this->Session->setFlash("Save!"); 
-					$this->redirect(array("action" => "index")); 
+					$this->redirect(array("action" => "message",$id)); 
 				} else { 
 					$this->Session->setFlash("Edit Error!"); 
 				}
@@ -46,7 +46,7 @@
 				throw new MethodNotAllowedException();
 			} if ($this->User->delete($id)) { 
 				$this->Session->setFlash("The user:" . $user["User"]["username"] . " has be remove!"); 
-				$this->redirect(array("action" => "index")); 
+				$this->redirect(array("action" => "ulist")); 
 			}
 		}
 		
