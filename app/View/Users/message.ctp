@@ -7,11 +7,6 @@
       );
       echo " | ";
       echo $this->Html->link(
-           "删除",
-           array("controller" => "Users", "action" => "delete", $user["User"]["id"])
-      );
-      echo " | ";
-      echo $this->Html->link(
            "登出",
            array("controller" => "Users", "action" => "logout")
       );
@@ -33,5 +28,11 @@
 	  <tr>  
         <td>电子邮件</td>
 		    <td><?php echo $user["User"]["email"] ?></td>                
-    </tr>     
+    </tr>
+    <tr>
+      <td>用户身份</td>
+      <td>
+        <?php if($user["User"]["isadmin"]){ echo "管理员";} else{ echo "普通用户";} ?>
+      </td>
+  </tr>  
 </table> 

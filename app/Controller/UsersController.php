@@ -2,31 +2,68 @@
 	class UsersController extends AppController{
 		public $name = "Users";
 		public $helper = array("Html","Form");	
+		public $components = array("Session");
 	
 		public function ulist(){
-			$this->set("users",$this->User->find("all"));
+			if($this->Session->check("uid")){
+				$id = $this->Session->read("uid");
+				$someone = $this->User->findById($id);
+				if($someone["User"]["isadmin"]) {
+					$this->set("users",$this->User->find("all"));
+				} else {
+					$this->redirect(array("action" => "message",$id));
+				}
+			} else {
+				$this->redirect(array("action" => "login"));
+			}
 		}
 
 		public function message($id = null)
 		{
-			$this->User->id = $id;
-			$this->set("user",$this->User->read());
-		}
-	
-		public $components = array("Session");
+			if($this->Session->check("uid")) {
+				$uid = $this->Session->read("uid");
+				$someone = $this->User->findById($uid);
+				
+				if($someone["User"]["isadmin"] || $id == $uid) {
+					$this->User->id = $id;
+					$this->set("user",$this->User->read());
+				} else {
+					$this->redirect(array("action" => "message",$uid));
+				}
+			} else {
+				$this->redirect(array("action" => "login"));
+			}
+		}		
 		
 		public function add() {
+			if($this->Session->check("uid")){
+				$id = $this->Session->read("uid");
+				$someone = $this->User->findById($id);
+				$this->set("isadmin",$someone["User"]["isadmin"]);
+			} else {
+				$this->set("isadmin",false);
+			}
 			if($this->request->is("post")) {
 				if($this->User->save(($this->request->data))) {  
 					$this->Session->setFlash("The user has be added, to do login it!");  
-					$this->redirect(array("action" => "index"));  
+					$this->redirect(array("action" => "ulist"));  
 				} else {  
 					$this->Session->setFlash("add Error!");  
 				}  
 			}
 		}
 		public function edit($id = null){
-     		$this->User->id = $id; 
+     		if($this->Session->check("uid")) {
+				$uid = $this->Session->read("uid");
+				$someone = $this->User->findById($uid);
+				$this->set("isadmin",$someone["User"]["isadmin"]);
+				if(!$someone["User"]["isadmin"] && $uid != $id){
+					$this->redirect(array("action" => "edit",$uid));
+				}				
+			} else {
+				$this->redirect(array("action" => "login"));
+			}
+			$this->User->id = $id;
 			$this->set("user",$this->User->read());
 			if ($this->request->is("get")) { 
 				$this->request->data = $this->User->read(); 
@@ -39,12 +76,23 @@
 				}
 			}
 		}
-		public function delete($id) {
+		public function remove($id) {
+			if($this->Session->check("uid")) {
+				$uid = $this->Session->read("uid");
+				$someone = $this->User->findById($uid);
+				if(!$someone["User"]["isadmin"] && $uid != $id){
+					$this->redirect(array("action" => "ulist"));
+				}				
+			} else {
+				$this->redirect(array("action" => "login"));
+			}
+			
 			$this->User->id = $id; 
 			$user = $this->User->read();
 			if ($this->request->is("get")) { 
 				throw new MethodNotAllowedException();
-			} if ($this->User->delete($id)) { 
+			}
+			if ($this->User->delete($id)) { 
 				$this->Session->setFlash("The user:" . $user["User"]["username"] . " has be remove!"); 
 				$this->redirect(array("action" => "ulist")); 
 			}
@@ -78,9 +126,9 @@
 		}
 		
 		public function index(){
-			if($this->Session->check("uid"))
-			{				
-				$this->redirect(array("action" => "message",$this->Session->read("uid"))); 
+			if($this->Session->check("uid")){				
+				$this->redirect(array("action" => "message",
+										$this->Session->read("uid"))); 
 			} else {
 				$this->redirect(array("action" => "login"));
 			}

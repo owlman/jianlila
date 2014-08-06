@@ -1071,3 +1071,294 @@ Stack Trace:
 #12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2014-08-06 13:54:44 Error: [MissingActionException] Action UsersController::uist() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'uist',
+)
+Request URL: /cakephp/users/uist
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-06 13:55:50 Error: [MissingActionException] Action UsersController::uist() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'uist',
+)
+Request URL: /cakephp/users/uist
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-06 14:08:16 Error: Fatal Error (1): Call to undefined function message() in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 28]
+2014-08-06 14:08:16 Error: [FatalErrorException] Call to undefined function message()
+Request URL: /cakephp/users/message/2
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 28)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 28, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 28, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-06 14:10:03 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 28]
+2014-08-06 14:10:03 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/users/message/2
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 28, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 28, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-06 14:36:29 Error: [MissingHelperException] Helper class isadminHelper could not be found.
+Exception Attributes: array (
+  'class' => 'isadminHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('isadmin')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(837): HelperCollection->__isset('isadmin')
+#2 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\add.ctp(10): View->__get('isadmin')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-06 14:37:59 Error: [MissingHelperException] Helper class isadminHelper could not be found.
+Exception Attributes: array (
+  'class' => 'isadminHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('isadmin')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(837): HelperCollection->__isset('isadmin')
+#2 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\add.ctp(10): View->__get('isadmin')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-06 14:38:42 Error: [MissingHelperException] Helper class isadminHelper could not be found.
+Exception Attributes: array (
+  'class' => 'isadminHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('isadmin')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(837): HelperCollection->__isset('isadmin')
+#2 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\add.ctp(10): View->__get('isadmin')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-06 14:40:16 Error: [MissingHelperException] Helper class isadminHelper could not be found.
+Exception Attributes: array (
+  'class' => 'isadminHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('isadmin')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(837): HelperCollection->__isset('isadmin')
+#2 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\add.ctp(10): View->__get('isadmin')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-06 14:56:32 Error: [MissingHelperException] Helper class isadminHelper could not be found.
+Exception Attributes: array (
+  'class' => 'isadminHelper',
+  'plugin' => false,
+)
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('isadmin')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(837): HelperCollection->__isset('isadmin')
+#2 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\add.ctp(32): View->__get('isadmin')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-06 16:03:20 Error: Fatal Error (64): Only variables can be passed by reference in [E:\baidudoc\code\studyWeb\cakephp\app\View\Users\add.ctp, line 50]
+2014-08-06 16:03:20 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(64, 'Only variables ...', 'E:\\baidudoc\\cod...', 50)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', 'E:\\baidudoc\\cod...', 50, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', 'E:\\baidudoc\\cod...', 50, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-06 16:03:59 Error: Fatal Error (1): Call to undefined function button() in [E:\baidudoc\code\studyWeb\cakephp\app\View\Users\add.ctp, line 50]
+2014-08-06 16:03:59 Error: [FatalErrorException] Call to undefined function button()
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 50, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 50, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-06 16:05:27 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-06 16:05:27 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /cakephp/users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-06 16:53:08 Error: Fatal Error (1): Call to undefined method UsersController::get() in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 61]
+2014-08-06 16:53:08 Error: [FatalErrorException] Call to undefined method UsersController::get()
+Request URL: /cakephp/Users/edit/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 61)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 61, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 61, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-06 16:54:47 Error: [CakeException] Unknown status code
+Request URL: /cakephp/Users/edit/2
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(785): CakeResponse->statusCode('1')
+#1 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(57): Controller->redirect(Array, '1')
+#2 [internal function]: UsersController->edit('2')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-08-06 16:58:38 Error: [CakeException] Unknown status code
+Request URL: /cakephp/Users/edit/2
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(785): CakeResponse->statusCode('1')
+#1 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(57): Controller->redirect(Array, '1')
+#2 [internal function]: UsersController->edit('2')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-08-06 18:16:55 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in [E:\baidudoc\code\studyWeb\cakephp\app\View\Users\edit.ctp, line 10]
+2014-08-06 18:16:55 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'
+Request URL: /cakephp/Users/edit/2
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 10, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 10, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-06 18:54:30 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/Users/delete/2
+Stack Trace:
+#0 [internal function]: UsersController->delete('2')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-06 18:57:45 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/Users/delete/2
+Stack Trace:
+#0 [internal function]: UsersController->delete('2')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-06 18:59:27 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/Users/delete/2
+Stack Trace:
+#0 [internal function]: UsersController->delete('2')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-06 19:02:35 Error: [MissingActionException] Action UsersController::massage() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'massage',
+)
+Request URL: /cakephp/Users/massage/3
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-06 19:02:59 Error: [MissingActionException] Action UsersController::massage() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'massage',
+)
+Request URL: /cakephp/Users/massage/3
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-06 19:05:16 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/Users/delete/3
+Stack Trace:
+#0 [internal function]: UsersController->delete('3')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-06 19:09:46 Error: [MissingActionException] Action UsersController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'delete',
+)
+Request URL: /cakephp/Users/delete/2
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-06 19:10:38 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/Users/remove/1
+Stack Trace:
+#0 [internal function]: UsersController->remove('1')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-06 19:24:54 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /cakephp/users/remove/6
+Stack Trace:
+#0 [internal function]: UsersController->remove('6')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
