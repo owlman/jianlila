@@ -3,14 +3,19 @@
 		public $name = "User";
 		public $validate = array(
 			"username" => array(
-				array("rule" => "NotEmpty","message" => "The username must not be empty!"),
-				array("rule" => "isUnique","message" => "The username must be Unique!")
+				array("rule" => "NotEmpty","message" => "Please enter your username..."),
+				array("rule" => "isUnique","message" => "The username already exitsts..."),
+				array("rule" => "alphaNumeric","message" => "Letters and numbers only...")
 			),
 			"password" => array(
-				array("rule" => "NotEmpty","message" => "Password must not be empty!"),
-				array("rule" => array("minLength","8"),"message" => "password must be at least 8 characters!"),
+				array("rule" => "NotEmpty","message" => "Please enter your password..."),
+				array("rule" => array("minLength","8"),
+								"message" =>"Password must be at least 8 characters long..."),
 			),
-			"email" => array("rule" => "email")
+			"email" => array(
+				array("rule" => "email","message" =>"Please enter a valid E-mail..."),
+				array("rule" => "isUnique","message" =>"The E-mail already exitsts...")
+			)
 		);			
 	};
 ?>

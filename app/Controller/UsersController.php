@@ -22,9 +22,10 @@
 		{
 			if($this->Session->check("uid")) {
 				$uid = $this->Session->read("uid");
+				$this->set("uid",$uid);
 				$someone = $this->User->findById($uid);
-				
 				if($someone["User"]["isadmin"] || $id == $uid) {
+					$this->set("isadmin",$someone["User"]["isadmin"]);
 					$this->User->id = $id;
 					$this->set("user",$this->User->read());
 				} else {
@@ -52,6 +53,7 @@
 				}  
 			}
 		}
+		
 		public function edit($id = null){
      		if($this->Session->check("uid")) {
 				$uid = $this->Session->read("uid");
@@ -76,6 +78,7 @@
 				}
 			}
 		}
+		
 		public function remove($id) {
 			if($this->Session->check("uid")) {
 				$uid = $this->Session->read("uid");

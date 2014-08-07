@@ -1,15 +1,26 @@
 <!-- File: /app/View/User/usermsg.ctp -->  
 <h1>用户信息</h1>
-<p><?php
+<p>
+        <?php
       echo $this->Html->link(
            "编辑",
            array("controller"=>"Users", "action"=>"edit",$user["User"]["id"])
       );
-      echo " | ";
-      echo $this->Html->link(
-           "登出",
-           array("controller" => "Users", "action" => "logout")
-      );
+      
+      if($user["User"]["id"] === $uid) {
+         echo " | ";      
+         echo $this->Html->link(
+             "注销登陆",
+             array("controller" => "Users", "action" => "logout")
+         );
+      }
+      if($isadmin) {
+         echo " | ";      
+         echo $this->Html->link(
+             "查看所有用户",
+             array("controller" => "Users", "action" => "ulist")
+         );
+      }
 ?></p>
 
 <table>		
