@@ -13,143 +13,140 @@
  * @since         CakePHP v 2.5
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
-App::uses('AppShell', 'Console/Command');
+App::uses ( 'AppShell', 'Console/Command' );
 
 /**
  * Provide command completion shells such as bash.
- * 
- * @package       Cake.Console.Command
+ *
+ * @package Cake.Console.Command
  */
 class CompletionShell extends AppShell {
-
-/**
- * Contains tasks to load and instantiate
- *
- * @var array
- */
-	public $tasks = array('Command');
-
-/**
- * Echo no header by overriding the startup method
- *
- * @return void
- */
+	
+	/**
+	 * Contains tasks to load and instantiate
+	 *
+	 * @var array
+	 */
+	public $tasks = array (
+			'Command' 
+	);
+	
+	/**
+	 * Echo no header by overriding the startup method
+	 *
+	 * @return void
+	 */
 	public function startup() {
 	}
-
-/**
- * Not called by the autocomplete shell - this is for curious users
- *
- * @return void
- */
+	
+	/**
+	 * Not called by the autocomplete shell - this is for curious users
+	 *
+	 * @return void
+	 */
 	public function main() {
-		return $this->out($this->getOptionParser()->help());
+		return $this->out ( $this->getOptionParser ()->help () );
 	}
-
-/**
- * list commands
- *
- * @return void
- */
+	
+	/**
+	 * list commands
+	 *
+	 * @return void
+	 */
 	public function commands() {
-		$options = $this->Command->commands();
-		return $this->_output($options);
+		$options = $this->Command->commands ();
+		return $this->_output ( $options );
 	}
-
-/**
- * list options for the named command
- *
- * @return void
- */
+	
+	/**
+	 * list options for the named command
+	 *
+	 * @return void
+	 */
 	public function options() {
 		$commandName = '';
-		if (!empty($this->args[0])) {
-			$commandName = $this->args[0];
+		if (! empty ( $this->args [0] )) {
+			$commandName = $this->args [0];
 		}
-		$options = $this->Command->options($commandName);
-
-		return $this->_output($options);
+		$options = $this->Command->options ( $commandName );
+		
+		return $this->_output ( $options );
 	}
-
-/**
- * list subcommands for the named command
- *
- * @return void
- */
+	
+	/**
+	 * list subcommands for the named command
+	 *
+	 * @return void
+	 */
 	public function subCommands() {
-		if (!$this->args) {
-			return $this->_output();
+		if (! $this->args) {
+			return $this->_output ();
 		}
-
-		$options = $this->Command->subCommands($this->args[0]);
-		return $this->_output($options);
+		
+		$options = $this->Command->subCommands ( $this->args [0] );
+		return $this->_output ( $options );
 	}
-
-/**
- * Guess autocomplete from the whole argument string
- * 
- * @return void
- */
+	
+	/**
+	 * Guess autocomplete from the whole argument string
+	 *
+	 * @return void
+	 */
 	public function fuzzy() {
-		return $this->_output();
+		return $this->_output ();
 	}
-
-/**
- * Gets the option parser instance and configures it.
- *
- * @return ConsoleOptionParser
- */
+	
+	/**
+	 * Gets the option parser instance and configures it.
+	 *
+	 * @return ConsoleOptionParser
+	 */
 	public function getOptionParser() {
-		$parser = parent::getOptionParser();
-
-		$parser->description(
-			__d('cake_console', 'Used by shells like bash to autocomplete command name, options and arguments')
-		)->addSubcommand('commands', array(
-			'help' => __d('cake_console', 'Output a list of available commands'),
-			'parser' => array(
-				'description' => __d('cake_console', 'List all availables'),
-				'arguments' => array(
-				)
-			)
-		))->addSubcommand('subcommands', array(
-			'help' => __d('cake_console', 'Output a list of available subcommands'),
-			'parser' => array(
-				'description' => __d('cake_console', 'List subcommands for a command'),
-				'arguments' => array(
-					'command' => array(
-						'help' => __d('cake_console', 'The command name'),
-						'required' => true,
-					)
-				)
-			)
-		))->addSubcommand('options', array(
-			'help' => __d('cake_console', 'Output a list of available options'),
-			'parser' => array(
-				'description' => __d('cake_console', 'List options'),
-				'arguments' => array(
-					'command' => array(
-						'help' => __d('cake_console', 'The command name'),
-						'required' => false,
-					)
-				)
-			)
-		))->epilog(
-			__d('cake_console', 'This command is not intended to be called manually')
-		);
-
+		$parser = parent::getOptionParser ();
+		
+		$parser->description ( __d ( 'cake_console', 'Used by shells like bash to autocomplete command name, options and arguments' ) )->addSubcommand ( 'commands', array (
+				'help' => __d ( 'cake_console', 'Output a list of available commands' ),
+				'parser' => array (
+						'description' => __d ( 'cake_console', 'List all availables' ),
+						'arguments' => array () 
+				) 
+		) )->addSubcommand ( 'subcommands', array (
+				'help' => __d ( 'cake_console', 'Output a list of available subcommands' ),
+				'parser' => array (
+						'description' => __d ( 'cake_console', 'List subcommands for a command' ),
+						'arguments' => array (
+								'command' => array (
+										'help' => __d ( 'cake_console', 'The command name' ),
+										'required' => true 
+								) 
+						) 
+				) 
+		) )->addSubcommand ( 'options', array (
+				'help' => __d ( 'cake_console', 'Output a list of available options' ),
+				'parser' => array (
+						'description' => __d ( 'cake_console', 'List options' ),
+						'arguments' => array (
+								'command' => array (
+										'help' => __d ( 'cake_console', 'The command name' ),
+										'required' => false 
+								) 
+						) 
+				) 
+		) )->epilog ( __d ( 'cake_console', 'This command is not intended to be called manually' ) );
+		
 		return $parser;
 	}
-
-/**
- * Emit results as a string, space delimited
- *
- * @param array $options The options to output
- * @return void
- */
+	
+	/**
+	 * Emit results as a string, space delimited
+	 *
+	 * @param array $options
+	 *        	The options to output
+	 * @return void
+	 */
 	protected function _output($options = array()) {
 		if ($options) {
-			return $this->out(implode($options, ' '));
+			return $this->out ( implode ( $options, ' ' ) );
 		}
 	}
 }

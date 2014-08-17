@@ -1,5 +1,5 @@
  <!-- File: /app/View/User/edit.ctp -->
-<h1>编辑 <?php echo $user["User"]["username"];?> 的用户信息</h1>
+<h3>编辑 <?php echo $user["User"]["username"];?> 的用户信息</h3>
 <?php echo $this->Form->create("User",
         array(
           "action" => "edit",
@@ -9,6 +9,12 @@
         )
      ));?>
 <table>
+  <tr>
+    <td>用户名</td>
+    <td>
+      <?php echo $this->Form->input("username");?>
+    </td>
+  </tr>		
   <tr>
     <td>密码</td>
     <td>
@@ -44,7 +50,7 @@
   <tr>
     <td>
       <?php 
-         echo $this->Form->input("id",array("type" => "hidden"));
+        echo $this->Form->input("id",array("type" => "hidden"));
         echo $this->Form->end("保存信息！"); ?>
     </td>
     <td>

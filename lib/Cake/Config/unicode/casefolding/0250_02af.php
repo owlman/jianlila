@@ -27,14 +27,20 @@
  *
  * The lower filed is an array of the decimal values that form the lower case version of a character.
  *
- *	The status field is:
+ * The status field is:
  * C: common case folding, common mappings shared by both simple and full mappings.
  * F: full case folding, mappings that cause strings to grow in length. Multiple characters are separated by spaces.
  * S: simple case folding, mappings to single characters where different from F.
  * T: special case for uppercase I and dotted uppercase I
- *   - For non-Turkic languages, this mapping is normally not used.
- *   - For Turkic languages (tr, az), this mapping can be used instead of the normal mapping for these characters.
- *     Note that the Turkic mappings do not maintain canonical equivalence without additional processing.
- *     See the discussions of case mapping in the Unicode Standard for more information.
+ * - For non-Turkic languages, this mapping is normally not used.
+ * - For Turkic languages (tr, az), this mapping can be used instead of the normal mapping for these characters.
+ * Note that the Turkic mappings do not maintain canonical equivalence without additional processing.
+ * See the discussions of case mapping in the Unicode Standard for more information.
  */
-$config['0250_02af'][] = array('upper' => 422, 'status' => 'C', 'lower' => array(640));
+$config ['0250_02af'] [] = array (
+		'upper' => 422,
+		'status' => 'C',
+		'lower' => array (
+				640 
+		) 
+);

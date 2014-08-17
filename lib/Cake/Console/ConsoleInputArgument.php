@@ -20,49 +20,53 @@
  * ConsoleOptionParser creates these when you use addArgument()
  *
  * @see ConsoleOptionParser::addArgument()
- * @package       Cake.Console
+ * @package Cake.Console
  */
 class ConsoleInputArgument {
-
-/**
- * Name of the argument.
- *
- * @var string
- */
+	
+	/**
+	 * Name of the argument.
+	 *
+	 * @var string
+	 */
 	protected $_name;
-
-/**
- * Help string
- *
- * @var string
- */
+	
+	/**
+	 * Help string
+	 *
+	 * @var string
+	 */
 	protected $_help;
-
-/**
- * Is this option required?
- *
- * @var bool
- */
+	
+	/**
+	 * Is this option required?
+	 *
+	 * @var bool
+	 */
 	protected $_required;
-
-/**
- * An array of valid choices for this argument.
- *
- * @var array
- */
+	
+	/**
+	 * An array of valid choices for this argument.
+	 *
+	 * @var array
+	 */
 	protected $_choices;
-
-/**
- * Make a new Input Argument
- *
- * @param string|array $name The long name of the option, or an array with all the properties.
- * @param string $help The help text for this option
- * @param bool $required Whether this argument is required. Missing required args will trigger exceptions
- * @param array $choices Valid choices for this option.
- */
+	
+	/**
+	 * Make a new Input Argument
+	 *
+	 * @param string|array $name
+	 *        	The long name of the option, or an array with all the properties.
+	 * @param string $help
+	 *        	The help text for this option
+	 * @param bool $required
+	 *        	Whether this argument is required. Missing required args will trigger exceptions
+	 * @param array $choices
+	 *        	Valid choices for this option.
+	 */
 	public function __construct($name, $help = '', $required = false, $choices = array()) {
-		if (is_array($name) && isset($name['name'])) {
-			foreach ($name as $key => $value) {
+		if (is_array ( $name ) && isset ( $name ['name'] )) {
+			foreach ( $name as $key => $value ) {
 				$this->{'_' . $key} = $value;
 			}
 		} else {
@@ -72,99 +76,98 @@ class ConsoleInputArgument {
 			$this->_choices = $choices;
 		}
 	}
-
-/**
- * Get the value of the name attribute.
- *
- * @return string Value of this->_name.
- */
+	
+	/**
+	 * Get the value of the name attribute.
+	 *
+	 * @return string Value of this->_name.
+	 */
 	public function name() {
 		return $this->_name;
 	}
-
-/**
- * Generate the help for this argument.
- *
- * @param int $width The width to make the name of the option.
- * @return string
- */
+	
+	/**
+	 * Generate the help for this argument.
+	 *
+	 * @param int $width
+	 *        	The width to make the name of the option.
+	 * @return string
+	 */
 	public function help($width = 0) {
 		$name = $this->_name;
-		if (strlen($name) < $width) {
-			$name = str_pad($name, $width, ' ');
+		if (strlen ( $name ) < $width) {
+			$name = str_pad ( $name, $width, ' ' );
 		}
 		$optional = '';
-		if (!$this->isRequired()) {
-			$optional = __d('cake_console', ' <comment>(optional)</comment>');
+		if (! $this->isRequired ()) {
+			$optional = __d ( 'cake_console', ' <comment>(optional)</comment>' );
 		}
-		if (!empty($this->_choices)) {
-			$optional .= __d('cake_console', ' <comment>(choices: %s)</comment>', implode('|', $this->_choices));
+		if (! empty ( $this->_choices )) {
+			$optional .= __d ( 'cake_console', ' <comment>(choices: %s)</comment>', implode ( '|', $this->_choices ) );
 		}
-		return sprintf('%s%s%s', $name, $this->_help, $optional);
+		return sprintf ( '%s%s%s', $name, $this->_help, $optional );
 	}
-
-/**
- * Get the usage value for this argument
- *
- * @return string
- */
+	
+	/**
+	 * Get the usage value for this argument
+	 *
+	 * @return string
+	 */
 	public function usage() {
 		$name = $this->_name;
-		if (!empty($this->_choices)) {
-			$name = implode('|', $this->_choices);
+		if (! empty ( $this->_choices )) {
+			$name = implode ( '|', $this->_choices );
 		}
 		$name = '<' . $name . '>';
-		if (!$this->isRequired()) {
+		if (! $this->isRequired ()) {
 			$name = '[' . $name . ']';
 		}
 		return $name;
 	}
-
-/**
- * Check if this argument is a required argument
- *
- * @return bool
- */
+	
+	/**
+	 * Check if this argument is a required argument
+	 *
+	 * @return bool
+	 */
 	public function isRequired() {
-		return (bool)$this->_required;
+		return ( bool ) $this->_required;
 	}
-
-/**
- * Check that $value is a valid choice for this argument.
- *
- * @param string $value The choice to validate.
- * @return bool
- * @throws ConsoleException
- */
+	
+	/**
+	 * Check that $value is a valid choice for this argument.
+	 *
+	 * @param string $value
+	 *        	The choice to validate.
+	 * @return bool
+	 * @throws ConsoleException
+	 */
 	public function validChoice($value) {
-		if (empty($this->_choices)) {
+		if (empty ( $this->_choices )) {
 			return true;
 		}
-		if (!in_array($value, $this->_choices)) {
-			throw new ConsoleException(
-				__d('cake_console', '"%s" is not a valid value for %s. Please use one of "%s"',
-				$value, $this->_name, implode(', ', $this->_choices)
-			));
+		if (! in_array ( $value, $this->_choices )) {
+			throw new ConsoleException ( __d ( 'cake_console', '"%s" is not a valid value for %s. Please use one of "%s"', $value, $this->_name, implode ( ', ', $this->_choices ) ) );
 		}
 		return true;
 	}
-
-/**
- * Append this arguments XML representation to the passed in SimpleXml object.
- *
- * @param SimpleXmlElement $parent The parent element.
- * @return SimpleXmlElement The parent with this argument appended.
- */
+	
+	/**
+	 * Append this arguments XML representation to the passed in SimpleXml object.
+	 *
+	 * @param SimpleXmlElement $parent
+	 *        	The parent element.
+	 * @return SimpleXmlElement The parent with this argument appended.
+	 */
 	public function xml(SimpleXmlElement $parent) {
-		$option = $parent->addChild('argument');
-		$option->addAttribute('name', $this->_name);
-		$option->addAttribute('help', $this->_help);
-		$option->addAttribute('required', $this->isRequired());
-		$choices = $option->addChild('choices');
-		foreach ($this->_choices as $valid) {
-			$choices->addChild('choice', $valid);
+		$option = $parent->addChild ( 'argument' );
+		$option->addAttribute ( 'name', $this->_name );
+		$option->addAttribute ( 'help', $this->_help );
+		$option->addAttribute ( 'required', $this->isRequired () );
+		$choices = $option->addChild ( 'choices' );
+		foreach ( $this->_choices as $valid ) {
+			$choices->addChild ( 'choice', $valid );
 		}
 		return $parent;
 	}
-
 }

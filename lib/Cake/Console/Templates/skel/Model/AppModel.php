@@ -9,8 +9,7 @@
  * @package       app.Model
  * @since         CakePHP(tm) v 0.2.9
  */
-
-App::uses('Model', 'Model');
+App::uses ( 'Model', 'Model' );
 
 /**
  * Application model for Cake.
@@ -18,7 +17,7 @@ App::uses('Model', 'Model');
  * Add your application-wide methods in the class below, your models
  * will inherit them.
  *
- * @package       app.Model
+ * @package app.Model
  */
 class AppModel extends Model {
 }

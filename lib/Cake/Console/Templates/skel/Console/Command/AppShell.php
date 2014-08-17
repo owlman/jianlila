@@ -5,8 +5,7 @@
  * @link          http://cakephp.org CakePHP(tm) Project
  * @since         CakePHP(tm) v 2.0
  */
-
-App::uses('Shell', 'Console');
+App::uses ( 'Shell', 'Console' );
 
 /**
  * Application Shell
@@ -14,8 +13,7 @@ App::uses('Shell', 'Console');
  * Add your application-wide methods in the class below, your shells
  * will inherit them.
  *
- * @package       app.Console.Command
+ * @package app.Console.Command
  */
 class AppShell extends Shell {
-
 }

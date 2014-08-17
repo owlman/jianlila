@@ -1362,3 +1362,978 @@ Stack Trace:
 #3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2014-08-07 16:52:23 Error: [MissingActionException] Action UsersController::userlist() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'userlist',
+)
+Request URL: /cakephp/users/userlist
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-07 16:53:15 Error: [MissingActionException] Action UsersController::userl() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'userl',
+)
+Request URL: /cakephp/users/userl
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-07 16:54:39 Error: [MissingActionException] Action UsersController::logi() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logi',
+)
+Request URL: /cakephp/users/logi
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-07 18:02:54 Error: [MissingControllerException] Controller class AaaaController could not be found.
+Exception Attributes: array (
+  'class' => 'AaaaController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/aaaa
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-07 18:03:25 Error: [MissingActionException] Action UsersController::logi() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'logi',
+)
+Request URL: /cakephp/users/logi
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-14 13:39:49 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2014-08-14 13:39:49 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 13:55:22 Error: Fatal Error (4): syntax error, unexpected 'ï¼Œarray' (T_STRING) in [E:\baidudoc\code\studyWeb\cakephp\app\View\Users\add.ctp, line 24]
+2014-08-14 13:55:22 Error: [FatalErrorException] syntax error, unexpected 'ï¼Œarray' (T_STRING)
+Request URL: /Users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 24, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 24, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 14:01:35 Error: Fatal Error (4): syntax error, unexpected 'ï¼Œarray' (T_STRING) in [E:\baidudoc\code\studyWeb\cakephp\app\View\Users\add.ctp, line 24]
+2014-08-14 14:01:35 Error: [FatalErrorException] syntax error, unexpected 'ï¼Œarray' (T_STRING)
+Request URL: /Users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 24, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 24, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 14:10:26 Error: Fatal Error (1): Call to undefined method SessionComponent::Flash() in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 68]
+2014-08-14 14:10:26 Error: [FatalErrorException] Call to undefined method SessionComponent::Flash()
+Request URL: /Users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 68, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 68, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 14:13:54 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2014-08-14 14:13:54 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 14:13:54 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\CakeSession.php, line 663]
+2014-08-14 14:13:54 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 14:26:18 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Users/remove/10
+Stack Trace:
+#0 [internal function]: UsersController->remove('10')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 14:26:21 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Users/remove/10
+Stack Trace:
+#0 [internal function]: UsersController->remove('10')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 14:26:56 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Users/remove/10
+Stack Trace:
+#0 [internal function]: UsersController->remove('10')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 14:28:41 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Users/remove/11
+Stack Trace:
+#0 [internal function]: UsersController->remove('11')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 15:00:44 Error: Fatal Error (1): Call to undefined method UsersController::get() in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 75]
+2014-08-14 15:00:44 Error: [FatalErrorException] Call to undefined method UsersController::get()
+Request URL: /Users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 75)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 75, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'E:\\baidudoc\\cod...', 75, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 15:08:12 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(808): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(155): Model->__call('findByUsername', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(155): User->findByUsername('lingjie')
+#8 [internal function]: UsersController->login()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-14 15:08:52 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Users/remove/15
+Stack Trace:
+#0 [internal function]: UsersController->remove('15')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 15:32:54 Error: [MethodNotAllowedException] Method Not Allowed
+Request URL: /Users/remove/16
+Stack Trace:
+#0 [internal function]: UsersController->remove('16')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 15:36:32 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2014-08-14 15:36:32 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Users/remove/10
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 15:36:51 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2006] MySQL server has gone away',
+  'enabled' => true,
+)
+Request URL: /Users/remove/10
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(808): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(128): Model->__call('findById', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(128): User->findById('1')
+#8 [internal function]: UsersController->remove('10')
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-14 15:37:45 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-14 15:37:45 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Users/remove/10
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 15:39:52 Error: [MissingViewException] View file "E:\baidudoc\code\studyWeb\cakephp\app\View\Users\remove.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\baidudoc\\code\\studyWeb\\cakephp\\app\\View\\Users\\remove.ctp',
+)
+Request URL: /Users/remove/9
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 15:44:08 Error: [MissingViewException] View file "E:\baidudoc\code\studyWeb\cakephp\app\View\Users\remove.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\baidudoc\\code\\studyWeb\\cakephp\\app\\View\\Users\\remove.ctp',
+)
+Request URL: /users/remove/1000
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 15:45:38 Error: [MissingControllerException] Controller class RemoveController could not be found.
+Exception Attributes: array (
+  'class' => 'RemoveController',
+  'plugin' => NULL,
+)
+Request URL: /remove/1000
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-14 15:46:14 Error: [MissingViewException] View file "E:\baidudoc\code\studyWeb\cakephp\app\View\Users\remove.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\baidudoc\\code\\studyWeb\\cakephp\\app\\View\\Users\\remove.ctp',
+)
+Request URL: /Users/remove/10000
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 15:47:33 Error: [MissingViewException] View file "E:\baidudoc\code\studyWeb\cakephp\app\View\Users\remove.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\baidudoc\\code\\studyWeb\\cakephp\\app\\View\\Users\\remove.ctp',
+)
+Request URL: /Users/remove/101
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 15:48:43 Error: [MissingViewException] View file "E:\baidudoc\code\studyWeb\cakephp\app\View\Users\remove.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\baidudoc\\code\\studyWeb\\cakephp\\app\\View\\Users\\remove.ctp',
+)
+Request URL: /Users/remove/1000
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-14 16:02:07 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [E:\baidudoc\code\studyWeb\cakephp\app\View\Users\edit.ctp, line 15]
+2014-08-14 16:02:07 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /Users/edit/7
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 15, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 15, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 19:26:24 Error: [MissingControllerException] Controller class EducationsController could not be found.
+Exception Attributes: array (
+  'class' => 'EducationsController',
+  'plugin' => NULL,
+)
+Request URL: /educations/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-14 19:40:07 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 20]
+2014-08-14 19:40:07 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /educations/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 20, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 20, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 19:41:05 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 20]
+2014-08-14 19:41:05 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /educations/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 20, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 20, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 19:41:53 Error: Fatal Error (4): syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 26]
+2014-08-14 19:41:53 Error: [FatalErrorException] syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE)
+Request URL: /educations/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 26, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 26, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 19:42:10 Error: Fatal Error (4): syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 26]
+2014-08-14 19:42:10 Error: [FatalErrorException] syntax error, unexpected ')', expecting '&' or variable (T_VARIABLE)
+Request URL: /educations/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 26, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 26, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 21:12:18 Error: Fatal Error (4): syntax error, unexpected ';', expecting function (T_FUNCTION) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 45]
+2014-08-14 21:12:18 Error: [FatalErrorException] syntax error, unexpected ';', expecting function (T_FUNCTION)
+Request URL: /educations/edulist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 45, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 45, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 21:24:16 Error: Fatal Error (4): syntax error, unexpected '}' in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 33]
+2014-08-14 21:24:16 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /educations/edulist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 33, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 33, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 21:25:13 Error: Fatal Error (4): syntax error, unexpected ';' in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 32]
+2014-08-14 21:25:13 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /educations/edulist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 32, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 32, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 21:49:03 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-14 21:49:03 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /educations/edulist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 21:49:03 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\CakeSession.php, line 663]
+2014-08-14 21:49:03 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /educations/edulist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 22:27:56 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-14 22:27:56 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-14 22:29:42 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-14 22:29:42 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /users/message/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-15 14:11:06 Error: [MissingControllerException] Controller class ClientsController could not be found.
+Exception Attributes: array (
+  'class' => 'ClientsController',
+  'plugin' => NULL,
+)
+Request URL: /clients
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-15 14:13:36 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+',
+  'enabled' => true,
+)
+Request URL: /Users/ulist
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('all', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->find('all')
+#8 [internal function]: UsersController->ulist()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-15 14:14:02 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+',
+  'enabled' => true,
+)
+Request URL: /Users/ulist
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('all', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->find('all')
+#8 [internal function]: UsersController->ulist()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-15 14:15:14 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+',
+  'enabled' => true,
+)
+Request URL: /Users/ulist
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('all', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->find('all')
+#8 [internal function]: UsersController->ulist()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-16 13:54:56 Error: Fatal Error (4): syntax error, unexpected end of file in [E:\baidudoc\code\studyWeb\cakephp\app\View\Users\message.ctp, line 53]
+2014-08-16 13:54:56 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /users/message/1000
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 53)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 53, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 53, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 13:59:21 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-16 13:59:21 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /users/message/1000
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 13:59:43 Error: Fatal Error (4): syntax error, unexpected end of file in [E:\baidudoc\code\studyWeb\cakephp\app\View\Users\message.ctp, line 51]
+2014-08-16 13:59:43 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /users/message/1000
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 51, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 51, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 14:27:25 Error: Fatal Error (4): syntax error, unexpected 'ï¼›' (T_STRING) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php, line 48]
+2014-08-16 14:27:25 Error: [FatalErrorException] syntax error, unexpected 'ï¼›' (T_STRING)
+Request URL: /users/message/1000
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 48, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 48, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 15:38:48 Error: Fatal Error (1): Cannot break/continue 1 level in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 34]
+2014-08-16 15:38:48 Error: [FatalErrorException] Cannot break/continue 1 level
+Request URL: /educations/edulist/
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot break/co...', 'E:\\baidudoc\\cod...', 34)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot break/co...', 'E:\\baidudoc\\cod...', 34, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot break/co...', 'E:\\baidudoc\\cod...', 34, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 15:40:29 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2014-08-16 15:40:29 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /educations/edulist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 15:41:29 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-16 15:41:29 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /educations/edulist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 15:41:48 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2014-08-16 15:41:48 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /educations/edulist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 16:39:57 Error: Fatal Error (1): Call to a member function save() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 47]
+2014-08-16 16:39:57 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 16:42:37 Error: Fatal Error (1): Call to a member function save() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 47]
+2014-08-16 16:42:37 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 16:42:52 Error: Fatal Error (1): Call to a member function save() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 47]
+2014-08-16 16:42:52 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 17:26:02 Error: [MissingActionException] Action EducationsController::eduladd() could not be found.
+Exception Attributes: array (
+  'controller' => 'EducationsController',
+  'action' => 'eduladd',
+)
+Request URL: /educations/eduladd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 17:46:10 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2006] MySQL server has gone away',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(808): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(157): Model->__call('findByUsername', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(157): User->findByUsername('lingjie')
+#8 [internal function]: UsersController->login()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-16 17:47:19 Error: [MissingActionException] Action UsersController::eduadd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'eduadd',
+)
+Request URL: /users/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 17:53:37 Error: Fatal Error (1): Call to a member function save() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 48]
+2014-08-16 17:53:37 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 48, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 48, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 17:54:41 Error: Fatal Error (1): Call to a member function save() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 48]
+2014-08-16 17:54:41 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 48)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 48, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 48, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 17:55:22 Error: Fatal Error (4): syntax error, unexpected ';', expecting function (T_FUNCTION) in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 58]
+2014-08-16 17:55:22 Error: [FatalErrorException] syntax error, unexpected ';', expecting function (T_FUNCTION)
+Request URL: /educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 58)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 58, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 58, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 17:56:09 Error: [MissingActionException] Action UsersController::eduadd() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'eduadd',
+)
+Request URL: /users/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 17:57:11 Error: Fatal Error (1): Call to a member function save() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 47]
+2014-08-16 17:57:11 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 47, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 18:14:15 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-16 18:14:15 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 20:35:05 Error: [MissingActionException] Action EducationsController::eduremove() could not be found.
+Exception Attributes: array (
+  'controller' => 'EducationsController',
+  'action' => 'eduremove',
+)
+Request URL: /Educations/eduremove/3
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-16 20:36:23 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-16 20:36:23 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Educations/eduremove/3
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 20:46:21 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2014-08-16 20:46:21 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 20:47:57 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\CakeSession.php, line 663]
+2014-08-16 20:47:57 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 20:47:57 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\CakeSession.php, line 663]
+2014-08-16 20:47:57 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 20:47:57 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\CakeSession.php, line 663]
+2014-08-16 20:47:57 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 21:09:49 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2014-08-16 21:09:49 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Educations/eduremove/30000
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-16 21:10:18 Error: [MissingViewException] View file "E:\baidudoc\code\studyWeb\cakephp\app\View\Educations\eduremove.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\baidudoc\\code\\studyWeb\\cakephp\\app\\View\\Educations\\eduremove.ctp',
+)
+Request URL: /Educations/eduremove/30
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-16 21:11:43 Error: [MissingViewException] View file "E:\baidudoc\code\studyWeb\cakephp\app\View\Educations\eduremove.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\baidudoc\\code\\studyWeb\\cakephp\\app\\View\\Educations\\eduremove.ctp',
+)
+Request URL: /Educations/eduremove/30
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 14:32:17 Error: Fatal Error (4): syntax error, unexpected ')' in [E:\baidudoc\code\studyWeb\cakephp\app\View\Educations\eduadd.ctp, line 73]
+2014-08-17 14:32:17 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /Educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 73, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 73, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 15:59:26 Error: [MissingViewException] View file "E:\baidudoc\code\studyWeb\cakephp\app\View\.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\baidudoc\\code\\studyWeb\\cakephp\\app\\View\\.ctp',
+)
+Request URL: /educations/eduremove/7
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName('/')
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render('/', NULL)
+#2 E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php(110): Controller->render('/')
+#3 [internal function]: EducationsController->eduremove('7')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EducationsController), Array)
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#7 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2014-08-17 16:02:29 Error: [MissingViewException] View file "E:\baidudoc\code\studyWeb\cakephp\app\View\Educations\eduremove.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'E:\\baidudoc\\code\\studyWeb\\cakephp\\app\\View\\Educations\\eduremove.ctp',
+)
+Request URL: /educations/eduremove/7
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(468): View->_getViewFileName(NULL)
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#4 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-08-17 18:23:25 Error: [MissingControllerException] Controller class ContentController could not be found.
+Exception Attributes: array (
+  'class' => 'ContentController',
+  'plugin' => NULL,
+)
+Request URL: /Content/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+5 Error: [MissingControllerException] Controller class StyleController could not be found.
+Exception Attributes: array (
+  'class' => 'StyleController',
+  'plugin' => NULL,
+)
+Request URL: /style/style.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 18:23:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/Script.js
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 18:23:26 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /lib/bootstrap/js/bootstrap.min.js
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 18:23:26 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /lib/jquery-1.10.2.min.js
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 18:23:26 Error: [MissingControllerException] Controller class LibController could not be found.
+Exception Attributes: array (
+  'class' => 'LibController',
+  'plugin' => NULL,
+)
+Request URL: /lib/bootstrap/js/bootstrap.min.js
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 18:23:26 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /js/Script.js
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 18:45:30 Error: [MissingControllerException] Controller class ContentController could not be found.
+Exception Attributes: array (
+  'class' => 'ContentController',
+  'plugin' => NULL,
+)
+Request URL: /Content/font-awesome/css/font-awesome.min.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 18:45:30 Error: [MissingControllerException] Controller class StyleController could not be found.
+Exception Attributes: array (
+  'class' => 'StyleController',
+  'plugin' => NULL,
+)
+Request URL: /style/style.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 19:11:15 Error: Fatal Error (4): syntax error, unexpected '?>', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in [E:\baidudoc\code\studyWeb\cakephp\app\View\Pages\index.ctp, line 3]
+2014-08-17 19:11:15 Error: [FatalErrorException] syntax error, unexpected '?>', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+Request URL: /
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 3, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 3, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-17 19:50:21 Error: [MissingControllerException] Controller class UController could not be found.
+Exception Attributes: array (
+  'class' => 'UController',
+  'plugin' => NULL,
+)
+Request URL: /u
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-17 20:48:26 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-17 20:48:26 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

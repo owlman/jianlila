@@ -1,8 +1,8 @@
 <!-- File: /app/View/User/usermsg.ctp -->  
-<h1>用户信息</h1>
+<h3>用户信息</h3>
 <p>
-        <?php
-      echo $this->Html->link(
+<?php
+  	  echo $this->Html->link(
            "编辑",
            array("controller"=>"Users", "action"=>"edit",$user["User"]["id"])
       );
@@ -10,7 +10,7 @@
       if($user["User"]["id"] === $uid) {
          echo " | ";      
          echo $this->Html->link(
-             "注销登陆",
+             "注销登录",
              array("controller" => "Users", "action" => "logout")
          );
       }

@@ -1,141 +1,195 @@
 <?php
-	class UsersController extends AppController{
-		public $name = "Users";
-		public $helper = array("Html","Form");	
-		public $components = array("Session");
+class UsersController extends AppController {
+	public $name = "Users";
+	public $helper = array (
+			"Html",
+			"Form" 
+	);
+	public $components = array (
+			"Session" 
+	);
 	
-		public function ulist(){
-			if($this->Session->check("uid")){
-				$id = $this->Session->read("uid");
-				$someone = $this->User->findById($id);
-				if($someone["User"]["isadmin"]) {
-					$this->set("users",$this->User->find("all"));
+	// 用户列表
+	public function ulist() {
+		if ($this->Session->check("uid")) {
+			$sid = $this->Session->read("uid");
+			$this->set("uid",$sid);
+			
+			if ($this->Session->read("isadmin")) {
+				$this->set ( "users", $this->User->find( "all" ));
+			} else {
+				$this->redirect(array (
+						"action" => "message",
+						$sid 
+				) );
+			}
+		} else {
+			$this->redirect(array("action" => "login"));
+		}
+	}
+	
+	// 用户信息
+	public function message($id = null) {
+		if ($this->Session->check("uid")) {
+			$sid = $this->Session->read("uid");
+			$this->set("uid", $sid);
+			
+			if ($this->Session->read("isadmin") || $id === $sid) {
+				$this->set("isadmin", $this->Session->read("isadmin"));
+				$this->User->id = $id;
+				$t = $this->User->read();
+				if (!empty($t)) {
+					$this->set("user",$t);
 				} else {
-					$this->redirect(array("action" => "message",$id));
-				}
-			} else {
-				$this->redirect(array("action" => "login"));
-			}
-		}
-
-		public function message($id = null)
-		{
-			if($this->Session->check("uid")) {
-				$uid = $this->Session->read("uid");
-				$this->set("uid",$uid);
-				$someone = $this->User->findById($uid);
-				if($someone["User"]["isadmin"] || $id == $uid) {
-					$this->set("isadmin",$someone["User"]["isadmin"]);
-					$this->User->id = $id;
-					$this->set("user",$this->User->read());
-				} else {
-					$this->redirect(array("action" => "message",$uid));
-				}
-			} else {
-				$this->redirect(array("action" => "login"));
-			}
-		}		
-		
-		public function add() {
-			if($this->Session->check("uid")){
-				$id = $this->Session->read("uid");
-				$someone = $this->User->findById($id);
-				$this->set("isadmin",$someone["User"]["isadmin"]);
-			} else {
-				$this->set("isadmin",false);
-			}
-			if($this->request->is("post")) {
-				if($this->User->save(($this->request->data))) {  
-					$this->Session->setFlash("The user has be added, to do login it!");  
-					$this->redirect(array("action" => "ulist"));  
-				} else {  
-					$this->Session->setFlash("add Error!");  
-				}  
-			}
-		}
-		
-		public function edit($id = null){
-     		if($this->Session->check("uid")) {
-				$uid = $this->Session->read("uid");
-				$someone = $this->User->findById($uid);
-				$this->set("isadmin",$someone["User"]["isadmin"]);
-				if(!$someone["User"]["isadmin"] && $uid != $id){
-					$this->redirect(array("action" => "edit",$uid));
-				}				
-			} else {
-				$this->redirect(array("action" => "login"));
-			}
-			$this->User->id = $id;
-			$this->set("user",$this->User->read());
-			if ($this->request->is("get")) { 
-				$this->request->data = $this->User->read(); 
-			} else {
-				if ($this->User->save($this->request->data)) { 
-					$this->Session->setFlash("Save!"); 
-					$this->redirect(array("action" => "message",$id)); 
-				} else { 
-					$this->Session->setFlash("Edit Error!"); 
-				}
-			}
-		}
-		
-		public function remove($id) {
-			if($this->Session->check("uid")) {
-				$uid = $this->Session->read("uid");
-				$someone = $this->User->findById($uid);
-				if(!$someone["User"]["isadmin"] && $uid != $id){
+					$this->Session->setFlash("对不起，您所访问的用户不存在！");
 					$this->redirect(array("action" => "ulist"));
-				}				
+				}
 			} else {
-				$this->redirect(array("action" => "login"));
+				$this->Session->setFlash("对不起，你没有管理员权限！");
+				$this->redirect(array (
+						"action" => "message",
+						$sid 
+				));
+			}
+		} else {
+			$this->Session->setFlash("对不起，您还没有登录！");				
+			$this->redirect(array("action" => "login"));
+		}
+	}
+	
+	// 用户注册
+	public function add() {
+		$sid = null;
+		$this->set("isadmin", false);
+		if ($this->Session->check("uid")) {
+			$sid = $this->Session->read("uid");
+			$this->set("isadmin", $this->Session->read("isadmin"));
+		} 
+		
+		if ($this->request->is("post")) {
+			if ($this->request->data["User"]["password"] 
+					!== $this->request->data["User"]["password2"]){
+				$this->Session->setFlash("您输入的密码不一致，请重新输入!");
+				return ;
 			}
 			
-			$this->User->id = $id; 
-			$user = $this->User->read();
-			if ($this->request->is("get")) { 
-				throw new MethodNotAllowedException();
-			}
-			if ($this->User->delete($id)) { 
-				$this->Session->setFlash("The user:" . $user["User"]["username"] . " has be remove!"); 
-				$this->redirect(array("action" => "ulist")); 
+			if ($this->User->save($this->request->data)) {
+				if($id!=null && $isadmin==false) {
+					$this->Session->setFlash("注册成功，请重新登录！");
+					$this->logout();					
+				} else {
+					$this->Session->setFlash("注册成功！");
+				}
+				$this->redirect(array("action" => "ulist"));
+			} else {
+				$this->Session->setFlash("注册错误，请再试一次！");
 			}
 		}
+	}
+	
+	// 编辑用户信息
+	public function edit($id = null) {
+		if ($this->Session->check("uid")) {
+			$sid = $this->Session->read("uid");
+			$this->set("isadmin", $this->Session->read("isadmin"));
+			if ($sid !== $id && !$this->Session->read("isadmin")) {
+				$this->Session->setFlash("对不起， 您没有管理员权限！");
+				$this->redirect( array (
+						"action" => "edit",
+						$sid 
+				));
+			}
+		} else {
+			$this->Session->setFlash("对不起，您还没有登录！");				
+			$this->redirect(array("action" => "login"));
+		}
 		
-		public function login(){
-			$this->set("error",false);
-			if($this->request->is("post")) {
-				if(!empty($this->data)) {
-					$someone = $this->User->findByUsername($this->data["User"]["username"]); 
-					//$this->Session->setFlash($someone["User"]["password"]."=".$this->data["User"]["password"]);
+		$this->User->id = $id;
+		$t = $this->User->read();
+		if (!empty($t)) {
+			$this->set("user",$t);
+		} else {
+			$this->Session->setFlash("对不起，您所访问的用户不存在！");
+			$this->redirect(array("action" => "ulist"));
+		}
+		
+		if ($this->request->is( "get" )) {
+			$this->request->data = $this->User->read();
+		} else {
+			if ($this->User->save($this->request->data)) {
+				$this->Session->setFlash ( "已经成功保存信息！" );
+				$this->redirect (array("action" => "ulist"));
+			} else {
+				$this->Session->setFlash ( "出错啦！" );
+			}
+		}
+	}
+	
+	// 删除用户
+	public function remove($id = null) {
+		if ($id == null) { $this->redirect(array("action" => "ulist"));	}
+		// 检查用户状态
+		if ($this->Session->check("uid")) {
+			if (!$this->Session->read("isadmin")) {
+				$this->Session->setFlash("对不起，您没有删除用户的权限！");
+				return ;
+			}
+		}				
+		
+		$this->User->id = $id;
+		$user = $this->User->read();
+		if (empty($user)){
+			$this->Session->setFlash("该用户不存在！");
+			$this->redirect(array("action" => "ulist"));
+		}
+		
+		if ($this->User->delete($id)) {
+			$this->Session->setFlash("用户：".$user["User"]["username"]."已被删除！");
+			$this->redirect(array("action" => "ulist"));	
+		}
+	}
+	
+	// 用户登录
+	public function login() {
+		if ($this->request->is("post")) {
+			if (!empty($this->data)) {
+				$someone = $this->User->findByUsername($this->data ["User"]["username"]);
 				
-					if(!empty($someone["User"]["password"]) && 
-						$someone["User"]["password"] === $this->data["User"]["password"])
-					{
-						$this->Session->write("uid",$someone["User"]["id"]);
-						$this->redirect(array("action" => "message",$someone["User"]["id"])); 
-					} else {  
-						$this->set("error",true);  
-					}  
+				if (!empty($someone["User"]["password"]) 
+					&& $someone["User"]["password"] === $this->data["User"]["password"])
+				{
+					$this->Session->write("uid", $someone["User"]["id"]);
+					$this->Session->write("isadmin",$someone["User"]["isadmin"]);
+					$this->redirect( array (
+							"action" => "message",
+							$someone["User"]["id"] 
+					));
+				} else {
+					$this->Session->setFlash("用户名或密码错误！");
 				}
 			}
 		}
-		
-		public function logout(){
-			if($this->Session->check("uid"))
-			{
-				$this->Session->delete("uid");
-				$this->redirect(array("action" => "index")); 
-			}
+	}
+	
+	// 用户登出
+	public function logout() {
+		if ($this->Session->check("uid")) {
+			$this->Session->delete("isadmin");
+			$this->Session->delete("uid");
+			$this->redirect ( array (
+					"action" => "index" 
+			));
 		}
-		
-		public function index(){
-			if($this->Session->check("uid")){				
-				$this->redirect(array("action" => "message",
-										$this->Session->read("uid"))); 
-			} else {
-				$this->redirect(array("action" => "login"));
-			}
-
+	}
+	public function index() {
+		if ($this->Session->check("uid")) {
+			$this->redirect( array (
+					"action" => "message",
+					$this->Session->read("uid") 
+			));
+		} else {
+			$this->redirect (array("action" => "login"));
 		}
-	};
+	}
+};
 ?>

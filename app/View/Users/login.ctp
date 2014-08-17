@@ -1,8 +1,5 @@
 <!-- File: /app/View/User/login.ctp -->
-<?php if ($error): ?>
-<p>用户名或密码错误！</p>
-<?php endif; ?>
-<h1>用户登陆</h1>
+<h3>用户登录</h3>
 <?php
     echo $this->Form->create("User",
         array(
@@ -26,7 +23,7 @@
       </td>
       <tr>
         <td>
-        <?php echo $this->Form->end("登陆！");?></td>
+        <?php echo $this->Form->end("登录");?></td>
         <td>
           <?php echo $this->Html->link(
                  "注册新用户",

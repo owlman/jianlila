@@ -14,79 +14,78 @@
  * @since         CakePHP(tm) v 1.3
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
-App::uses('AppShell', 'Console/Command');
+App::uses ( 'AppShell', 'Console/Command' );
 
 /**
  * Base class for Bake Tasks.
  *
- * @package       Cake.Console.Command.Task
+ * @package Cake.Console.Command.Task
  */
 class BakeTask extends AppShell {
-
-/**
- * Name of plugin
- *
- * @var string
- */
+	
+	/**
+	 * Name of plugin
+	 *
+	 * @var string
+	 */
 	public $plugin = null;
-
-/**
- * The db connection being used for baking
- *
- * @var string
- */
+	
+	/**
+	 * The db connection being used for baking
+	 *
+	 * @var string
+	 */
 	public $connection = null;
-
-/**
- * Flag for interactive mode
- *
- * @var bool
- */
+	
+	/**
+	 * Flag for interactive mode
+	 *
+	 * @var bool
+	 */
 	public $interactive = false;
-
-/**
- * Disable caching and enable debug for baking.
- * This forces the most current database schema to be used.
- *
- * @return void
- */
+	
+	/**
+	 * Disable caching and enable debug for baking.
+	 * This forces the most current database schema to be used.
+	 *
+	 * @return void
+	 */
 	public function startup() {
-		Configure::write('debug', 2);
-		Configure::write('Cache.disable', 1);
-		parent::startup();
+		Configure::write ( 'debug', 2 );
+		Configure::write ( 'Cache.disable', 1 );
+		parent::startup ();
 	}
-
-/**
- * Gets the path for output. Checks the plugin property
- * and returns the correct path.
- *
- * @return string Path to output.
- */
+	
+	/**
+	 * Gets the path for output.
+	 * Checks the plugin property
+	 * and returns the correct path.
+	 *
+	 * @return string Path to output.
+	 */
 	public function getPath() {
 		$path = $this->path;
-		if (isset($this->plugin)) {
-			$path = $this->_pluginPath($this->plugin) . $this->name . DS;
+		if (isset ( $this->plugin )) {
+			$path = $this->_pluginPath ( $this->plugin ) . $this->name . DS;
 		}
 		return $path;
 	}
-
-/**
- * Base execute method parses some parameters and sets some properties on the bake tasks.
- * call when overriding execute()
- *
- * @return void
- */
+	
+	/**
+	 * Base execute method parses some parameters and sets some properties on the bake tasks.
+	 * call when overriding execute()
+	 *
+	 * @return void
+	 */
 	public function execute() {
-		foreach ($this->args as $i => $arg) {
-			if (strpos($arg, '.')) {
-				list($this->params['plugin'], $this->args[$i]) = pluginSplit($arg);
+		foreach ( $this->args as $i => $arg ) {
+			if (strpos ( $arg, '.' )) {
+				list ( $this->params ['plugin'], $this->args [$i] ) = pluginSplit ( $arg );
 				break;
 			}
 		}
-		if (isset($this->params['plugin'])) {
-			$this->plugin = $this->params['plugin'];
+		if (isset ( $this->params ['plugin'] )) {
+			$this->plugin = $this->params ['plugin'];
 		}
 	}
-
 }

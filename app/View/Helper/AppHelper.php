@@ -18,8 +18,7 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
-App::uses('Helper', 'View');
+App::uses ( 'Helper', 'View' );
 
 /**
  * Application helper
@@ -27,7 +26,7 @@ App::uses('Helper', 'View');
  * Add your application-wide methods in the class below, your helpers
  * will inherit them.
  *
- * @package       app.View.Helper
+ * @package app.View.Helper
  */
 class AppHelper extends Helper {
 }

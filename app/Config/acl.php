@@ -25,9 +25,9 @@
  * Assumptions:
  *
  * 1. In your application you created a User model with the following properties:
- *    username, group_id, password, email, firstname, lastname and so on.
+ * username, group_id, password, email, firstname, lastname and so on.
  * 2. You configured AuthComponent to authorize actions via
- *    $this->Auth->authorize = array('Actions' => array('actionPath' => 'controllers/'),...)
+ * $this->Auth->authorize = array('Actions' => array('actionPath' => 'controllers/'),...)
  *
  * Now, when a user (i.e. jeff) authenticates successfully and requests a controller action (i.e. /invoices/delete)
  * that is not allowed by default (e.g. via $this->Auth->allow('edit') in the Invoices controller) then AuthComponent
@@ -50,8 +50,8 @@
  *
  * {{{
  * $config['map'] = array(
- *    'User' => 'User/username',
- *    'Role' => 'User/group_id',
+ * 'User' => 'User/username',
+ * 'Role' => 'User/group_id',
  * );
  * }}}
  *
@@ -62,7 +62,7 @@
  *
  * {{{
  * $config['alias'] = array(
- *    'Role/4' => 'Role/editor',
+ * 'Role/4' => 'Role/editor',
  * );
  * }}}
  *
@@ -70,11 +70,11 @@
  *
  * {{{
  * $config['roles'] = array(
- *    'Role/admin' => null,
- *    'Role/accountant' => null,
- *    'Role/editor' => null,
- *    'Role/manager' => 'Role/editor, Role/accountant',
- *    'User/jeff' => 'Role/manager',
+ * 'Role/admin' => null,
+ * 'Role/accountant' => null,
+ * 'Role/editor' => null,
+ * 'Role/manager' => 'Role/editor, Role/accountant',
+ * 'User/jeff' => 'Role/manager',
  * );
  * }}}
  *
@@ -83,18 +83,18 @@
  *
  * {{{
  * $config['rules'] = array(
- *    'allow' => array(
- *        '*' => 'Role/admin',
- *        'controllers/users/(dashboard|profile)' => 'Role/default',
- *        'controllers/invoices/*' => 'Role/accountant',
- *        'controllers/articles/*' => 'Role/editor',
- *        'controllers/users/*'  => 'Role/manager',
- *        'controllers/invoices/delete'  => 'Role/manager',
- *    ),
- *    'deny' => array(
- *        'controllers/invoices/delete' => 'Role/accountant, User/jeff',
- *        'controllers/articles/(delete|publish)' => 'Role/editor',
- *    ),
+ * 'allow' => array(
+ * '*' => 'Role/admin',
+ * 'controllers/users/(dashboard|profile)' => 'Role/default',
+ * 'controllers/invoices/*' => 'Role/accountant',
+ * 'controllers/articles/*' => 'Role/editor',
+ * 'controllers/users/*' => 'Role/manager',
+ * 'controllers/invoices/delete' => 'Role/manager',
+ * ),
+ * 'deny' => array(
+ * 'controllers/invoices/delete' => 'Role/accountant, User/jeff',
+ * 'controllers/articles/(delete|publish)' => 'Role/editor',
+ * ),
  * );
  * }}}
  *
@@ -114,32 +114,32 @@
  * The role map defines how to resolve the user record from your application
  * to the roles you defined in the roles configuration.
  */
-$config['map'] = array(
-	'User' => 'User/username',
-	'Role' => 'User/group_id',
+$config ['map'] = array (
+		'User' => 'User/username',
+		'Role' => 'User/group_id' 
 );
 
 /**
  * define aliases to map your model information to
  * the roles defined in your role configuration.
  */
-$config['alias'] = array(
-	'Role/4' => 'Role/editor',
+$config ['alias'] = array (
+		'Role/4' => 'Role/editor' 
 );
 
 /**
  * role configuration
  */
-$config['roles'] = array(
-	'Role/admin' => null,
+$config ['roles'] = array (
+		'Role/admin' => null 
 );
 
 /**
  * rule configuration
  */
-$config['rules'] = array(
-	'allow' => array(
-		'*' => 'Role/admin',
-	),
-	'deny' => array(),
+$config ['rules'] = array (
+		'allow' => array (
+				'*' => 'Role/admin' 
+		),
+		'deny' => array () 
 );
