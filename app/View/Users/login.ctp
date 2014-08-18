@@ -1,5 +1,9 @@
 <!-- File: /app/View/User/login.ctp -->
-<h3>用户登录</h3>
+<div class="page-header">
+	<h3>用户登录</h3>
+</div>
+
+<table class="table table-bordered table-striped">
 <?php
     echo $this->Form->create("User",
         array(
@@ -8,27 +12,29 @@
               "label" => false,
               "div" => false
         )
-     ));
+    ));
  ?>
-<table>
   <tr>
-    <td>用户名</td>
+    <td>用户名：</td>
     <td>
       <?php echo $this->Form->input("username");?>
     </td>
-    <tr>
-      <td>密码</td>
+   </tr> 
+   <tr>
+      <td>密码：</td>
       <td>
         <?php echo $this->Form->input("password");?>
       </td>
-      <tr>
+    </tr>
+    <tr>
         <td>
-        <?php echo $this->Form->end("登录");?></td>
+        	<button type="submit" class="btn btn-success">登录</button>
+        </td>
         <td>
           <?php echo $this->Html->link(
                  "注册新用户",
                  array("controller" => "Users", "action" => "add")
            );?>
         </td>
-
+      </tr>
 </table>

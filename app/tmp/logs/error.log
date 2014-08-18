@@ -2337,3 +2337,218 @@ Stack Trace:
 #3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-08-18 16:35:13 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-18 16:35:13 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-18 16:39:49 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\login.ctp(14): FormHelper->create('User', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-18 18:25:47 Error: Fatal Error (4): syntax error, unexpected '>' in [E:\baidudoc\code\studyWeb\cakephp\app\View\Users\add.ctp, line 22]
+2014-08-18 18:25:47 Error: [FatalErrorException] syntax error, unexpected '>'
+Request URL: /Users/add
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 22)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 22, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 22, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-18 18:49:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake-generic.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-18 19:51:35 Error: Fatal Error (4): syntax error, unexpected 'ï¼Œ' (T_STRING), expecting ')' in [E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php, line 104]
+2014-08-18 19:51:35 Error: [FatalErrorException] syntax error, unexpected 'ï¼Œ' (T_STRING), expecting ')'
+Request URL: /Educations/eduedit/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 104)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 104, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'E:\\baidudoc\\cod...', 104, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-18 20:07:52 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2014-08-18 20:07:52 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Educations/eduadd/7
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-18 20:51:33 Error: [MissingControllerException] Controller class 1Controller could not be found.
+Exception Attributes: array (
+  'class' => '1Controller',
+  'plugin' => NULL,
+)
+Request URL: //1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-18 20:57:45 Error: [MissingActionException] Action UsersController::edulist() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'edulist',
+)
+Request URL: /Users/edulist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-18 20:59:25 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+',
+  'enabled' => true,
+)
+Request URL: /Educations/eduremove/9
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('educations')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('first', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1604): Model->find('first', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php(125): Model->read()
+#9 [internal function]: EducationsController->eduremove('9')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EducationsController), Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-18 21:00:11 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+',
+  'enabled' => true,
+)
+Request URL: /Educations/eduremove/10
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('educations')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('first', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1604): Model->find('first', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php(125): Model->read()
+#9 [internal function]: EducationsController->eduremove('10')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EducationsController), Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-18 21:00:38 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+',
+  'enabled' => true,
+)
+Request URL: /Educations/eduremove/10
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('educations')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('first', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1604): Model->find('first', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php(125): Model->read()
+#9 [internal function]: EducationsController->eduremove('10')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EducationsController), Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-18 21:01:05 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+',
+  'enabled' => true,
+)
+Request URL: /Educations/eduremove/10
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('educations')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('first', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1604): Model->find('first', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php(125): Model->read()
+#9 [internal function]: EducationsController->eduremove('10')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EducationsController), Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-18 21:01:30 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+',
+  'enabled' => true,
+)
+Request URL: /Educations/eduremove/10
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('educations')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('first', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1604): Model->find('first', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\app\Controller\EducationsController.php(125): Model->read()
+#9 [internal function]: EducationsController->eduremove('10')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(EducationsController), Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
