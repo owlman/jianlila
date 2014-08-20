@@ -1,5 +1,13 @@
  <!-- File: /app/View/Educations/eduadd.ctp -->
 <div>
+	<h3>学历列表</h3>
+	<p><?php echo $this->Html->link(
+			"添加新学历",array("controller"=>"Educations", 
+							"action"=>"eduadd",
+							$uid
+			));
+	?></p>
+	
 	 <table class="table table-bordered table-striped">
 		<tr>
 	  		<th>学历</th>

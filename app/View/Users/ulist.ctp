@@ -1,14 +1,11 @@
 <!-- File: /app/View/User/ulist.ctp -->
-<div class="page-header">
+<div class="container">
 	<h3>用户列表</h3>
 	<p><?php echo $this->Html->link(
 			"添加新用户",
 			array("controller"=>"Users", "action"=>"add")
 			);
 	?></p>
-</div>
-
-<div>
 	<table class="table table-bordered table-striped">  
 	    <tr>  
 	        <th>用户名</th>  

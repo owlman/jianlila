@@ -1,42 +1,28 @@
- <!-- File: /app/View/Educations/eduadd.ctp -->
+<!-- File: /app/View/Experiences/expadd.ctp -->
+
 <div class="container">
  	<table class="table table-bordered table-striped message"> 
-	<?php echo $this->Form->create("Education",
+	<?php echo $this->Form->create("Experience",
 	        array("inputDefaults" => array(
 	          "label" => false,
 	          "div" => false
 	        )
 	     ));
 	?>
-	  <tr>
-	    <td>请选择您的学历 （必填）：</td>
+	 <tr>
+	    <td>请输入您的职务：</td>
 	    <td><?php 
-	      	echo $this->Form->input("degree", array(
-				"empty" => "【请选择】",
-				"options" => array(
-					"博士"=>"博士",
-					"硕士"=>"硕士",
-					"本科"=>"本科",
-					"高中"=>"高中",
-					"初中"=>"初中"
-				)
-			));
+	      	echo $this->Form->input("title");
 	    ?></td>
 	  </tr>
 	  <tr>
-	    <td>请输入您就读的学校 （必填）：</td>
+	    <td>请输入您就职的公司 ：</td>
 	    <td>
-	      <?php echo $this->Form->input("school");?> 
+	      <?php echo $this->Form->input("company");?> 
 	    </td>
 	  </tr>
 	  <tr>
-	    <td>请输入您的专业 （必填）：</td>
-	    <td>
-	      <?php echo $this->Form->input("study"); ?>
-	    </td>
-	  </tr>
-	  <tr>
-	    <td>您的就读时间 （必填）：</td>
+	    <td>您的在职时间 ：</td>
 	    <td> <?php
 	     	echo $this->Form->input("in_date", array(
 				"type" => "date",
@@ -71,8 +57,8 @@
 	    	   echo " | ";
 	    	   echo $this->Html->link(
 	           		"放弃",
-	           		array("controller"=>"Educations", 
-						  "action"=>"edulist",
+	           		array("controller"=>"Experiences", 
+						  "action"=>"explist",
 						  $uid
 					)
 	      	   );
@@ -80,6 +66,7 @@
 	    	?>
 	    </td>
 	  </tr>
+	  
 	<?php echo $this->Form->end();?>
 	</table>
 </div>

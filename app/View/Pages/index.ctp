@@ -1,9 +1,7 @@
-<div class="page-header">
-	<h1>简历啦<small> 最漂亮的简历，最直接的投递！</small></h1>
-</div>
-<!-- Slider Carousel - START -->
- <div class="container">
-     <div id="carousel1" class="carousel slide" data-ride="carousel">
+<!-- File: /app/View/Pages/indexs.ctp -->
+
+<div class="container">
+    <div id="carousel1" class="carousel slide" data-ride="carousel">
          <div class="carousel-inner">
              <div class="item active">
                  <img alt="Bootstrap template"
@@ -44,5 +42,5 @@
            </a>
          </li>
      </ul>
- </div>
-    <!-- Slider Carousel - END -->
+ 	</div>
+</div>

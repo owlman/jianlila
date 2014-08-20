@@ -2552,3 +2552,728 @@ Stack Trace:
 #12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
 #13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2014-08-19 14:09:48 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\login.ctp(6): FormHelper->create('User', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 14:32:29 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2006] MySQL server has gone away',
+  'enabled' => true,
+)
+Request URL: /Users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\login.ctp(15): FormHelper->create('User', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 14:56:21 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2006] MySQL server has gone away',
+  'enabled' => true,
+)
+Request URL: /Users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\login.ctp(13): FormHelper->create('User', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 15:09:12 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\login.ctp(13): FormHelper->create('User', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 15:12:57 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\login.ctp(13): FormHelper->create('User', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 15:17:31 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Users/ulist
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('all', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(19): Model->find('all')
+#8 [internal function]: UsersController->ulist()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-19 15:22:18 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Users/message/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('first', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1604): Model->find('first', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(40): Model->read()
+#9 [internal function]: UsersController->message('1')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-19 16:06:48 Error: [MissingActionException] Action BooksController::eduadd() could not be found.
+Exception Attributes: array (
+  'controller' => 'BooksController',
+  'action' => 'eduadd',
+)
+Request URL: /Books/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BooksController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-19 16:09:24 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-19 16:09:24 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Educations/edulist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:10:06 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('educations')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Education', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Educations\eduadd.ctp(9): FormHelper->create('Education', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 16:10:32 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('educations')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Education', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Educations\eduadd.ctp(9): FormHelper->create('Education', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 16:10:57 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('educations')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Education', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Educations\eduadd.ctp(9): FormHelper->create('Education', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 16:11:23 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('educations')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Education', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Educations\eduadd.ctp(9): FormHelper->create('Education', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 16:11:55 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Educations/eduadd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('educations')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Education', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Educations\eduadd.ctp(9): FormHelper->create('Education', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(EducationsController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 16:13:44 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(808): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(156): Model->__call('findByUsername', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(156): User->findByUsername('lingjie')
+#8 [internal function]: UsersController->login()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-19 16:24:52 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\CakeSession.php, line 663]
+2014-08-19 16:24:52 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:24:52 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\CakeSession.php, line 663]
+2014-08-19 16:24:52 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 663, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:25:39 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2006] MySQL server has gone away',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\login.ctp(13): FormHelper->create('User', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 16:26:14 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php, line 196]
+2014-08-19 16:26:14 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:29:07 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Users\login.ctp(13): FormHelper->create('User', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 16:30:21 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php, line 196]
+2014-08-19 16:30:21 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:39:57 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php, line 196]
+2014-08-19 16:39:57 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Users/edit/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:40:43 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Books/badd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('books')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1365): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(215): Model->schema()
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\Helper\FormHelper.php(468): FormHelper->_introspectModel('Book', 'fields')
+#8 E:\baidudoc\code\studyWeb\cakephp\app\View\Books\badd.ctp(9): FormHelper->create('Book', Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(948): include('E:\\baidudoc\\cod...')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(910): View->_evaluate('E:\\baidudoc\\cod...', Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\View\View.php(471): View->_render('E:\\baidudoc\\cod...')
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(954): View->render(NULL, NULL)
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(198): Controller->render()
+#14 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BooksController), Object(CakeRequest))
+#15 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2014-08-19 16:42:50 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Books/bedit/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('books')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('first', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1604): Model->find('first', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\app\Controller\BooksController.php(80): Model->read()
+#9 [internal function]: BooksController->bedit('1')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BooksController), Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BooksController), Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-19 16:45:13 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Books/badd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('books')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1409): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1275): Model->getColumnType('out_date')
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1212): Model->deconstruct('out_date', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1724): Model->set(Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\app\Controller\BooksController.php(54): Model->save(Array)
+#10 [internal function]: BooksController->badd('1')
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BooksController), Array)
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BooksController), Object(CakeRequest))
+#14 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-08-19 16:46:05 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Books/badd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('books')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1409): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1275): Model->getColumnType('pubdate')
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1212): Model->deconstruct('pubdate', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1724): Model->set(Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\app\Controller\BooksController.php(54): Model->save(Array)
+#10 [internal function]: BooksController->badd('1')
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BooksController), Array)
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BooksController), Object(CakeRequest))
+#14 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-08-19 16:47:23 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Books/badd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('books')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1409): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1275): Model->getColumnType('out_date')
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1212): Model->deconstruct('out_date', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1724): Model->set(Array)
+#9 E:\baidudoc\code\studyWeb\cakephp\app\Controller\BooksController.php(54): Model->save(Array)
+#10 [internal function]: BooksController->badd('1')
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BooksController), Array)
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BooksController), Object(CakeRequest))
+#14 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-08-19 16:48:09 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php, line 196]
+2014-08-19 16:48:09 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Books/badd/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 16:52:26 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-19 16:52:26 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /Books/blist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 17:00:14 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+',
+  'enabled' => true,
+)
+Request URL: /Books/blist
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('books')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(808): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\app\Controller\BooksController.php(32): Model->__call('findAllByUser_i...', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\app\Controller\BooksController.php(32): book->findAllByUser_id(NULL)
+#8 [internal function]: BooksController->blist()
+#9 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BooksController), Array)
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BooksController), Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-19 17:02:15 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2006] MySQL server has gone away',
+  'enabled' => true,
+)
+Request URL: /Books/bedit/3
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('books')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('first', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1604): Model->find('first', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\app\Controller\BooksController.php(80): Model->read()
+#9 [internal function]: BooksController->bedit('3')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(BooksController), Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(BooksController), Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-19 18:11:11 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-19 18:11:11 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 18:13:43 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php, line 458]
+2014-08-19 18:13:43 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /users/login
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 458, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 18:15:30 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2006] MySQL server has gone away',
+  'enabled' => true,
+)
+Request URL: /users/message/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3498): ConnectionManager::getDataSource('default')
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1136): Model->setDataSource('default')
+#4 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(3525): Model->setSource('users')
+#5 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2921): Model->getDataSource()
+#6 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(2893): Model->_readDataSource('first', Array)
+#7 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Model.php(1604): Model->find('first', Array)
+#8 E:\baidudoc\code\studyWeb\cakephp\app\Controller\UsersController.php(40): Model->read()
+#9 [internal function]: UsersController->message('1')
+#10 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#12 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2014-08-19 18:16:47 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php, line 196]
+2014-08-19 18:16:47 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /skills/slist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 196, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 18:19:01 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2014-08-19 18:19:01 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /skills/slist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 18:25:31 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Model\Datasource\Database\Mysql.php, line 178]
+2014-08-19 18:25:31 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /skills/slist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', 'E:\\baidudoc\\cod...', 178, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-19 20:31:58 Error: [MissingActionException] Action ExperiencesController::slist() could not be found.
+Exception Attributes: array (
+  'controller' => 'ExperiencesController',
+  'action' => 'slist',
+)
+Request URL: /Experiences/slist/1
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(ExperiencesController), Object(CakeRequest))
+#2 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

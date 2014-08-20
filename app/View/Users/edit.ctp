@@ -1,5 +1,5 @@
  <!-- File: /app/View/User/edit.ctp -->
-<div class="page-header">
+<div class="container">
 	<h3>编辑 <?php echo $user["User"]["username"];?> 的用户信息：</h3>
 	<?php echo $this->Form->create("User",
 	        array(
@@ -9,9 +9,7 @@
 	              "div" => false
 	        )
 	));?>
-</div>
-<div>
-	<table class="table table-bordered table-striped">
+	<table class="table table-bordered table-striped message">
 	  <tr>
 	    <td>用户名：</td>
 	    <td>

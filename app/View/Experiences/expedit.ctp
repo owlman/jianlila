@@ -1,6 +1,6 @@
- <!-- File: /app/View/Educations/eduedit.ctp -->
+ <!-- File: /app/View/Experiences/expedit.ctp -->
 <div class="container">
- 	<?php echo $this->Form->create("Education",
+ 	<?php echo $this->Form->create("Experience",
 	        array("inputDefaults" => array(
 	          "label" => false,
 	          "div" => false
@@ -9,42 +9,27 @@
 	?>
 	<table class="table table-bordered table-striped message">
 	  <tr>
-	    <td>您的学历 ：</td>
-	    <td><?php 
-	      	echo $this->Form->input("degree", array(
-				"empty" => "【请选择】",
-				"options" => array(
-					"博士"=>"博士",
-					"硕士"=>"硕士",
-					"本科"=>"本科",
-					"高中"=>"高中",
-					"初中"=>"初中"
-				)
-			));
-	    ?></td>
-	  </tr>
-	  <tr>
-	    <td>您就读的学校： </td>
+	    <td>职位： </td>
 	    <td>
-	      <?php echo $this->Form->input("school");?> 
+	      <?php echo $this->Form->input("title");?> 
 	    </td>
 	  </tr>
 	  <tr>
-	    <td>您的专业 ：</td>
+	    <td>所在公司： </td>
 	    <td>
-	      <?php echo $this->Form->input("study"); ?>
+	      <?php echo $this->Form->input("company");?> 
 	    </td>
-	  </tr>	  
+	  </tr>
 	  <tr>
-	    <td>您的就读时间 ：</td>
+	    <td>在职时间：</td>
 	    <td> <?php
-	     	echo $this->Form->input("in_date", array(
-				"type" => "date",
+	    	echo $this->Form->input("in_date", array(
+	    		"type" => "date",
 	    		"dateFormat" => "Y-M-D",
 	    		"minYear" => 1940,
-	    		"maxYear" => 2050
-			));
-	     	echo "—";
+	    		"maxYear" => 2050,
+	   		));
+			echo "——";
 	     	echo $this->Form->input("out_date", array(
 	    		"type" => "date",
 				"dateFormat" => "Y-M-D",
@@ -54,7 +39,7 @@
 	     	?> </td>
 	    </tr>
 	  <tr>
-	    <td>补充说明  （可不填）:</td>
+	    <td>补充说明 （可不填）:</td>
 	    <td>
 	      <?php
 	       	echo $this->Form->input("description", array("type" => "textarea"));
@@ -73,8 +58,8 @@
 	    	   echo " | ";
 	    	   echo $this->Html->link(
 	           		"放弃编辑",
-	           		array("controller"=>"Educations", 
-						  "action"=>"edulist",
+	           		array("controller"=>"Experiences", 
+						  "action"=>"explist",
 						  $uid
 					)
 	      	   );

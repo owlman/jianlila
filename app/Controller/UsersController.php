@@ -153,7 +153,7 @@ class UsersController extends AppController {
 	public function login() {
 		if ($this->request->is("post")) {
 			if (!empty($this->data)) {
-				$someone = $this->User->findByUsername($this->data ["User"]["username"]);
+				$someone = $this->User->findByUsername($this->data["User"]["username"]);
 				
 				if (!empty($someone["User"]["password"]) 
 					&& $someone["User"]["password"] === $this->data["User"]["password"])

@@ -1,5 +1,5 @@
 ﻿<!-- File: /app/View/User/add.ctp -->
-<div class="page-header">
+<div class="container">
 	<h3><?php
 		if ($isadmin) {
 			echo "添加新用户";
@@ -7,10 +7,7 @@
 			echo "注册新用户";
 		}
 	?></h3>
-</div>
-
-<div>
-	<table class="table table-bordered table-striped">
+	<table class="table table-bordered table-striped message">
 	<?php echo $this->Form->create("User",
 	        array("inputDefaults" => array(
 	          "label" => false,

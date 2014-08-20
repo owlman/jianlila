@@ -1,6 +1,6 @@
 <?php
-class EducationsController extends AppController {
-	public $name = "Educations";
+class SkillsController extends AppController {
+	public $name = "Skills";
 	public $helper = array (
 			"Html",
 			"Form"
@@ -12,7 +12,7 @@ class EducationsController extends AppController {
 	public function index() {
 		if ($this->Session->check("uid")) {
 			$this->redirect(array(
-					"action" => "edulist",
+					"action" => "slist",
 					$this->Session->read("uid")
 			));
 		} else {
@@ -24,13 +24,13 @@ class EducationsController extends AppController {
 		}
 	}
 	
-	public function edulist($uid = null)
+	public function slist($uid = null)
 	{
-		$this->set("uid",$uid);
+		$this->set("uid", $uid);
 		if ($this->Session->check("uid")) {
 			$sid = $this->Session->read("uid");			
 			if($uid === $sid || $this->Session->read("isadmin")) {
-				$this->set("edus", $this->Education->findAllByUser_id($uid));				
+				$this->set("skills", $this->Skill->findAllByUser_id($uid));				
 			} else {
 				$this->redirect(array("action" => "index"));
 			}
@@ -43,20 +43,20 @@ class EducationsController extends AppController {
 		}
 	}
 		
-	public function eduadd($uid = null) {
+	public function sadd($uid = null) {
 				
 		if ($this->Session->check("uid")) {
 			$this->set("uid",$uid);
 			$sid = $this->Session->read("uid");
 			if(($uid === $sid || $this->Session->read("isadmin"))
 					&& $this->request->is("post")) {
-				$this->request->data["Education"]["user_id"] = $uid;
+				$this->request->data["Skill"]["user_id"] = $uid;
 				//print_r($this->request->data);			
-				if ($this->Education->save($this->request->data)) {
+				if ($this->Skill->save($this->request->data)) {
 					$this->Session->setFlash("信息已成功添加！");
 					$this->redirect(array(
-							"action" => "edulist",
-							$this->request->data["Education"]["user_id"]
+							"action" => "slist",
+							$this->request->data["Skill"]["user_id"]
 					));
 				} else {
 					$this->Session->setFlash("信息添加错误，请再试一次！");
@@ -71,18 +71,18 @@ class EducationsController extends AppController {
 		}		
 	}
 	
-	public function eduedit($eid = null)
+	public function sedit($skid = null)
 	{
-		if ($eid == null) { $this->redirect(array("action" => "edulist"));	}
-		$edu = null;
+		if ($skid == null) { $this->redirect(array("action" => "slist"));	}
+		$Skill = null; 
 		// 检查用户状态
 		if ($this->Session->check("uid")) {
-			$this->Education->id = $eid;
-			$edu = $this->Education->read();
-			if (empty($edu)){
+			$this->Skill->id = $skid;
+			$Skill = $this->Skill->read();
+			if (empty($Skill)){
 				$this->Session->setFlash("该信息不存在！");
 				$this->redirect(array("action" => "index"));
-			} elseif($edu["Education"]["user_id"] !== $this->Session->read("uid")
+			} elseif($Skill["Skill"]["user_id"] !== $this->Session->read("uid")
 					&& !$this->Session->read("isadmin")) {
 				$this->Session->setFlash("对不起，您没有编辑该信息的权限！");
 				$this->redirect(array("action" => "index"));
@@ -94,16 +94,16 @@ class EducationsController extends AppController {
 					"action"     => "login"
 			));
 		}		
-		$this->set("uid", $edu["Education"]["user_id"]);
+		$this->set("uid", $Skill["Skill"]["user_id"]);
 		if ($this->request->is( "get" )) {
-			$this->request->data = $edu;
+			$this->request->data = $Skill;
 		} else {
-			if ($this->Education->save($this->request->data)) {
+			if ($this->Skill->save($this->request->data)) {
 				$this->Session->setFlash ( "已经成功保存信息！" );
 				
 				$this->redirect (array(
-						"action" => "edulist",
-						$edu["Education"]["user_id"]
+						"action" => "slist",
+						$Skill["Skill"]["user_id"]
 				));
 			} else {
 				$this->Session->setFlash ( "出错啦！" );
@@ -111,17 +111,17 @@ class EducationsController extends AppController {
 		}
 	}
 	
-	public function eduremove($eid = null)
+	public function sremove($skid = null)
 	{
-		if ($eid == null) { $this->redirect(array("action" => "edulist"));	}
+		if ($skid == null) { $this->redirect(array("action" => "slist"));	}
 		// 检查用户状态
 		if ($this->Session->check("uid")) {
-			$this->Education->id = $eid;
-			$edu = $this->Education->read();
-			if (empty($edu)){
+			$this->Skill->id = $skid;
+			$Skill = $this->Skill->read();
+			if (empty($Skill)){
 				$this->Session->setFlash("该信息不存在！");
 				$this->redirect(array("action" => "index"));
-			} elseif($edu["Education"]["user_id"] !== $this->Session->read("uid")
+			} elseif($Skill["Skill"]["user_id"] !== $this->Session->read("uid")
 				    || !$this->Session->read("isadmin")) {
 				$this->Session->setFlash("对不起，您没有删除该信息的权限！");
 				$this->redirect(array("action" => "index"));
@@ -135,11 +135,11 @@ class EducationsController extends AppController {
 		}		
 		 
 		
-		if ($this->Education->delete($eid)) {
-			$this->Session->setFlash("学历：".$edu["Education"]["degree"]."的信息已被删除！");
+		if ($this->Skill->delete($skid)) {
+			$this->Session->setFlash("技能：".$Skill["Skill"]["skillname"]."的信息已被删除！");
 			$this->redirect(array(
-					"action" => "edulist",
-					$edu["Education"]["user_id"]
+					"action" => "slist",
+					$Skill["Skill"]["user_id"]
 			));
 		}
 	}	

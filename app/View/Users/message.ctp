@@ -1,5 +1,5 @@
 <!-- File: /app/View/User/usermsg.ctp -->  
-<div class="page-header">
+<div class="container">
 	<h3>用户信息</h3>
 	<p><?php
 	  	  echo $this->Html->link(
@@ -22,10 +22,7 @@
 	         );
 	      }
 	?></p>
-</div>
-
-<div>
-	<table class="table table-bordered table-striped">		
+	<table class="table table-bordered table-striped message">		
 	    <tr>  
 	        <td>用户名：</td>
 			    <td><?php echo $user["User"]["username"] ?></td>                
