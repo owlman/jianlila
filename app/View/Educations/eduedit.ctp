@@ -1,87 +1,92 @@
  <!-- File: /app/View/Educations/eduedit.ctp -->
-<div class="container">
- 	<?php echo $this->Form->create("Education",
-	        array("inputDefaults" => array(
-	          "label" => false,
-	          "div" => false
-	        )
-	     ));
-	?>
-	<table class="table table-bordered table-striped message">
-	  <tr>
-	    <td>您的学历 ：</td>
-	    <td><?php 
-	      	echo $this->Form->input("degree", array(
+<div class="span10">
+	<h3>编辑学历信息</h3>
+	
+	<?php 
+		echo $this->Form->create("Education",array(			
+			"class" => "form-horizontal well"
+		));
+		echo $this->Form->input("degree", array(
+				"class" => "span2",
 				"empty" => "【请选择】",
 				"options" => array(
-					"博士"=>"博士",
-					"硕士"=>"硕士",
-					"本科"=>"本科",
-					"高中"=>"高中",
-					"初中"=>"初中"
+						"博士"=>"博士",
+						"硕士"=>"硕士",
+						"本科"=>"本科",
+						"高中"=>"高中",
+						"初中"=>"初中"
+				),
+				"label" => array(
+						"class" => "control-label",
+						"text" => "您的学历："
 				)
-			));
-	    ?></td>
-	  </tr>
-	  <tr>
-	    <td>您就读的学校： </td>
-	    <td>
-	      <?php echo $this->Form->input("school");?> 
-	    </td>
-	  </tr>
-	  <tr>
-	    <td>您的专业 ：</td>
-	    <td>
-	      <?php echo $this->Form->input("study"); ?>
-	    </td>
-	  </tr>	  
-	  <tr>
-	    <td>您的就读时间 ：</td>
-	    <td> <?php
-	     	echo $this->Form->input("in_date", array(
+		));
+		echo $this->Form->input("school",array(
+			"div" => "control-group",
+			"class" => "span6",
+			"label" => array(
+				"class" => "control-label",
+				"text" => "您就读的学校："
+			)
+		));
+		echo $this->Form->input("study",array(
+				"div" => "control-group",
+				"class" => "span6",
+				"label" => array(
+						"class" => "control-label",
+						"text" => "您所学的专业："
+				)
+		));
+		echo $this->Form->input("in_date", array(
 				"type" => "date",
-	    		"dateFormat" => "Y-M-D",
-	    		"minYear" => 1940,
-	    		"maxYear" => 2050
-			));
-	     	echo "—";
-	     	echo $this->Form->input("out_date", array(
-	    		"type" => "date",
 				"dateFormat" => "Y-M-D",
-	    		"minYear" => 1940,
-	    		"maxYear" => 2050,
-			));
-	     	?> </td>
-	    </tr>
-	  <tr>
-	    <td>补充说明  （可不填）:</td>
-	    <td>
-	      <?php
-	       	echo $this->Form->input("description", array("type" => "textarea"));
-	       	echo $this->Form->input("user_id",array("type" => "hidden"));
-	       	echo $this->Form->input("id",array("type" => "hidden"));
-	      ?>	       
-	     </td>
-	  </tr>
-	  <tr>
-	    <td>
-	      	<button type="submit" class="btn btn-success">保存</button>
-	    </td>
-	    <td>
-	    	<button type="reset" class="btn btn-primary">重置</button>
-	    	<?php
-	    	   echo " | ";
-	    	   echo $this->Html->link(
-	           		"放弃编辑",
-	           		array("controller"=>"Educations", 
-						  "action"=>"edulist",
-						  $uid
-					)
-	      	   );
-	      
-	    	?>
-	    </td>
-	  </tr>
-	  <?php echo $this->Form->end(); ?>	  
-	</table>
+				"minYear" => 1940,
+				"maxYear" => 2050,
+				"class" => "span2",
+				"label" => array(
+					"class" => "control-label",
+					"text" => "入学日期："
+				)
+		));
+		echo $this->Form->input("out_date", array(
+				"type" => "date",
+				"dateFormat" => "Y-M-D",
+				"minYear" => 1940,
+				"maxYear" => 2050,
+				"class" => "span2",
+				"label" => array(
+						"class" => "control-label",
+						"text" => "毕业日期："
+				)
+		));
+		echo $this->Form->input("description", array(
+				"type" => "textarea",
+				"class" => "span6",
+				"label" => array(
+					"class" => "control-label",
+					"text" => "补充说明（可不填）："
+				)
+		));
+		echo $this->Form->input("user_id",array("type" => "hidden"));
+		echo $this->Form->input("id",array("type" => "hidden"));		
+		$submit = $this->Form->submit("保存", array(
+				"div" => array("class" => "control-label"),
+				"type" => "submit",
+				"class" => "btn btn-large btn-primary"
+		));
+		$reset = $this->Form->button("重置", array(
+				"type" => "reset",
+				"class" => "btn btn-inverse"
+		));
+		$exit = $this->Form->button("放弃", array(
+				"type" => "button",
+				"class" => "btn btn-link",
+				"onclick" => "javascript:history.back(-1)"
+		));
+		$otherbtn = $this->Html->div("controls btn-toolbar",$reset.$exit);
+		echo $this->Html->div("control-group", $submit.$otherbtn);
+		echo $this->Form->end();
+	?>
 </div>
+ 
+ 

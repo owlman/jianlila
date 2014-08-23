@@ -181,6 +181,7 @@ class UsersController extends AppController {
 			));
 		}
 	}
+	
 	public function index() {
 		if ($this->Session->check("uid")) {
 			$this->redirect( array (
@@ -191,5 +192,14 @@ class UsersController extends AppController {
 			$this->redirect (array("action" => "login"));
 		}
 	}
+	
+
+	public function getjson() {
+		$users = $this->User->find('all');
+		$this->response->body(json_encode($users));
+		return $this->response;
+	}	
+	
+	
 };
 ?>

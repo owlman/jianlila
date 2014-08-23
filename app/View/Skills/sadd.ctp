@@ -1,54 +1,50 @@
  <!-- File: /app/View/Books/sadd.ctp -->
-<div class="container">
- 	<table class="table table-bordered table-striped message"> 
-	<?php echo $this->Form->create("Skill",
-	        array("inputDefaults" => array(
-	          "label" => false,
-	          "div" => false
-	        )
-	     ));
-	?>
-	  <tr>
-	    <td>您熟悉的技能 ：</td>
-	    <td>
-	      <?php echo $this->Form->input("skillname");?> 
-	    </td>
-	  </tr>
-	  <tr>
-	    <td>熟练程度：</td>
-	    <td> <?php
-	     	echo $this->Form->input("level", array(
+<div class="span10">
+	<h3>添加新技能</h3>
+	
+	<?php 
+		echo $this->Form->create("Skill",array(			
+			"class" => "form-horizontal well"
+		));
+		echo $this->Form->input("skillname",array(
+			"div" => "control-group",
+			"class" => "span6",
+			"label" => array(
+				"class" => "control-label",
+				"text" => "请输入要添加的技能："
+			)
+		));
+		echo $this->Form->input("level", array(
 				"empty" => "【请选择】",
 				"options" => array(
-					"初学"=>"初学",
-					"熟悉"=>"熟悉",
-					"精通"=>"精通",
-					"专家"=>"专家"
+						"初学"=>"初学",
+						"熟悉"=>"熟悉",
+						"精通"=>"精通",
+						"专家"=>"专家"
+				),
+				"label" => array(
+						"class" => "control-label",
+						"text" => "熟练程度："
 				)
-			));
-	     	?> </td>
-	  </tr>
-	  <tr>
-	    <td>
-	      	<button type="submit" class="btn btn-success">添加</button>
-	    </td>
-	    <td>
-	    	<button type="reset" class="btn btn-primary">重置</button>
-	    	<?php
-	    	   echo $this->Form->input("user_id",array("type" => "hidden"));
-	    	   echo $this->Form->input("id",array("type" => "hidden"));
-	    	   echo " | ";
-	    	   echo $this->Html->link(
-	           		"放弃",
-	           		array("controller"=>"Skills", 
-						  "action"=>"slist",
-						  $uid
-					)
-	      	   );
-	      
-	    	?>
-	    </td>
-	  </tr>
-	<?php echo $this->Form->end();?>
-	</table>
-</div>
+		));
+		
+		$submit = $this->Form->submit("添加", array(
+				"div" => array("class" => "control-label"),
+				"type" => "submit",
+				"class" => "btn btn-large btn-primary"
+		));
+		$reset = $this->Form->button("重置", array(
+				"type" => "reset",
+				"class" => "btn btn-inverse"
+		));
+		$exit = $this->Form->button("放弃", array(
+				"type" => "button",
+				"class" => "btn btn-link",
+				"onclick" => "javascript:history.back(-1)"
+		));
+		$otherbtn = $this->Html->div("controls btn-toolbar",$reset.$exit);
+		echo $this->Html->div("control-group", $submit.$otherbtn);
+		echo $this->Form->end();
+	?>
+</div> 
+ 
