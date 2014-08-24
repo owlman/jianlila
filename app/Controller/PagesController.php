@@ -15,6 +15,11 @@ class PagesController extends AppController {
 			"Js",
 			"Jquery" => array("Jquery")
 	);
+	
+
+	public $components = array (
+			"Session"
+	);	
 	/**
 	 * Displays a view
 	 *

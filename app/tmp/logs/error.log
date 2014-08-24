@@ -206,3 +206,358 @@ Request URL: /css/boot%20strap-responsive.css
 Stack Trace:
 #0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2014-08-23 19:28:32 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 19:30:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 19:30:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 19:31:07 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 19:39:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:05:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:07:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:14:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:14:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:16:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:17:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:18:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:19:01 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:19:37 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:19:55 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:20:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-23 20:20:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:34:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:34:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:34:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:34:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:34:53 Error: Fatal Error (1): Call to a member function check() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\View\Pages\write.ctp, line 4]
+2014-08-24 13:34:53 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /pages/write
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-24 13:34:54 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:36:55 Error: Fatal Error (1): Call to a member function check() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\View\Pages\write.ctp, line 4]
+2014-08-24 13:36:55 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /pages/write
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-24 13:36:56 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:36:59 Error: Fatal Error (1): Call to a member function check() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\View\Pages\write.ctp, line 4]
+2014-08-24 13:36:59 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /pages/write
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-24 13:37:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:37:02 Error: Fatal Error (1): Call to a member function check() on a non-object in [E:\baidudoc\code\studyWeb\cakephp\app\View\Pages\write.ctp, line 4]
+2014-08-24 13:37:02 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /pages/write
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4, Array)
+#2 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'E:\\baidudoc\\cod...', 4, Array)
+#3 E:\baidudoc\code\studyWeb\cakephp\lib\Cake\Core\App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-24 13:37:02 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:38:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:45:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:45:58 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:53:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:54:11 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:54:39 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:58:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 13:58:06 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 16:44:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-24 16:44:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/boot%20strap-responsive.css
+Stack Trace:
+#0 E:\baidudoc\code\studyWeb\cakephp\app\webroot\index.php(102): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

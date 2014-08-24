@@ -29,10 +29,16 @@
               <li><a href="#about">本站简介</a></li>
               <li><a href="#contact">关于我们</a></li>
             </ul>
+            <?php if($this->Session->check("uid")):?>
+            <ul class="nav navbar-nav pull-right">
+              <li><a href="/users/message">Hi! <?=$this->Session->read("username") ?></a></li>
+              <li><a href="/users/logout">登出</a></li>
+            <?php else:?>
             <ul class="nav navbar-nav pull-right">
               <li><a href="/users/login">登录</a></li>
               <li><a href="/users/add">注册</a></li>
             </ul>
+            <?php endif;?>
           </div><!--/.nav-collapse -->
         </div>
       </div>

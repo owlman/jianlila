@@ -160,6 +160,8 @@ class UsersController extends AppController {
 				{
 					$this->Session->write("uid", $someone["User"]["id"]);
 					$this->Session->write("isadmin",$someone["User"]["isadmin"]);
+					$this->Session->write("username",$someone["User"]["username"]);
+						
 					$this->redirect( array (
 							"action" => "message",
 							$someone["User"]["id"] 
@@ -175,7 +177,9 @@ class UsersController extends AppController {
 	public function logout() {
 		if ($this->Session->check("uid")) {
 			$this->Session->delete("isadmin");
+			$this->Session->delete("username");
 			$this->Session->delete("uid");
+			$this->Session->destroy();
 			$this->redirect ( array (
 					"action" => "index" 
 			));
