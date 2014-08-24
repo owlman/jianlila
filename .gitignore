@@ -4,3 +4,5 @@ cakephp.puo
 cakephp.suo
 .vsphp*
 cakephp.intel*
+app/tmp/*
+
