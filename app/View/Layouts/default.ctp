@@ -31,8 +31,11 @@
             </ul>
             <?php if($this->Session->check("uid")):?>
             <ul class="nav navbar-nav pull-right">
-              <li><a href="/users/message">Hi! <?=$this->Session->read("username") ?></a></li>
+              <li><a href="/users/message/<?=$this->Session->read("uid") ?>">
+              		Hi! <?=$this->Session->read("username") ?>
+              </a></li>
               <li><a href="/users/logout">登出</a></li>
+            </ul>
             <?php else:?>
             <ul class="nav navbar-nav pull-right">
               <li><a href="/users/login">登录</a></li>

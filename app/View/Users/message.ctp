@@ -22,7 +22,7 @@
 	         );
 	      }
 	?></p>
-	<table class="table table-bordered table-striped message">		
+	<table class="table table-bordered table-striped">		
 	    <tr>  
 	        <td>用户名：</td>
 			    <td><?php echo $user["User"]["username"] ?></td>                
