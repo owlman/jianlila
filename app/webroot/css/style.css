@@ -1,16 +1,22 @@
 body {
-    padding-top: 60px;
-    padding-bottom: 40px;
+	
+}
+header {
+	height: 60px;
+}
+footer {
+	height: 60ox;
+	margin-top:30px;
+	padding-top: 10px;
+	border-top: 1px solid #eee;
 }
 
-.footer {
-	width:100%;
-	height:60px;
-	position:fixed; 
-	left:20px; 
-	bottom:0px;
-	background-color: #f5f5f5;
-	border-top: 1px solid #eee;
+.clear {
+	clear: both;
+}
+
+#wrap {
+	min-height: 600px;
 }
 
 .form-signin {
@@ -50,16 +56,47 @@ body {
              border-radius: 4px;
 }
 
+/* Form errors */
+form .error {
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-weight: normal;
+}
+
+form .error-message {
+	-moz-border-radius: none;
+	-webkit-border-radius: none;
+	border-radius: none;
+	border: none;
+	background: none;
+	margin: 0;
+	padding-left: 4px;
+	padding-right: 0;
+	margin-top: -1px;
+	
+}
+
+form .error, form .error-message {
+	color: #9E2424;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+
 .message h4 {
 	color: #c09853;
 	margin: 0;
 }
 
-
 .cake-error, p.error, .error-message {
 	color: #E9573F;
 	border-color: #eed3d7;	
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);	
 }
 
 .success {

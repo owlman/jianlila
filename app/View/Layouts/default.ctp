@@ -19,45 +19,48 @@
 	?>
 </head>
 <body>
-	<!--导航部分开始 -->
-    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="/pages/index">简历啦</a>
-          <div class="nav-collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#about">本站简介</a></li>
-              <li><a href="#contact">关于我们</a></li>
-            </ul>
-            <?php if($this->Session->check("uid")):?>
-            <ul class="nav navbar-nav pull-right">
-              <li><a href="/users/message/<?=$this->Session->read("uid") ?>">
-              		Hi! <?=$this->Session->read("username") ?>
-              </a></li>
-              <li><a href="/users/logout">登出</a></li>
-            </ul>
-            <?php else:?>
-            <ul class="nav navbar-nav pull-right">
-              <li><a href="/users/login">登录</a></li>
-              <li><a href="/users/add">注册</a></li>
-            </ul>
-            <?php endif;?>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-    <!--导航部分结束 -->    
-	
-	<div class="container">		
-		<?php echo $this->Session->flash(); ?>
-	
-		<?php echo $this->fetch('content'); ?>
+	<header class="contalner">
+		<div class="navbar navbar-default navbar-fixed-top">
+	      <div class="navbar-inner">
+	        <div class="container">
+	          <a class="brand" href="/pages/index">简历啦</a>
+	          <div class="nav-collapse">
+	            <ul class="nav navbar-nav">
+	              <li><a href="#about">本站简介</a></li>
+	              <li><a href="#contact">关于我们</a></li>
+	            </ul>
+	            <?php if($this->Session->check("uid")):?>
+	            <ul class="nav navbar-nav pull-right">
+	              <li><a href="/users/message/<?=$this->Session->read("uid") ?>">
+	              		Hi! <?=$this->Session->read("username") ?>
+	              </a></li>
+	              <li><a href="/users/logout">登出</a></li>
+	            </ul>
+	            <?php else:?>
+	            <ul class="nav navbar-nav pull-right">
+	              <li><a href="/users/login">登录</a></li>
+	              <li><a href="/users/add">注册</a></li>
+	            </ul>
+	            <?php endif;?>
+	          </div><!--/.nav-collapse -->
+	        </div>
+	      </div>
+	    </div>
+	    <div class="clear"></div>
+	</header>		
+	<!--主体部分开始 -->	
+	<div id="wrap">	
+		<div class="container">
+			<?php echo $this->Session->flash(); ?>		
+			<?php echo $this->fetch('content'); ?>
+		</div>
+		<div class="clear"></div>
 	</div>
-	<!--页脚部分开始 -->     
-   	<footer class="footer">
-		<p>© 2002-2014 owlman.org, all rights reserved </p>
-	</footer>
+	<!--主体部分结束 -->			
 	
-	<?php //echo $this->element('sql_dump'); ?>				
+	<footer class="container">
+   		<p class="muted">© 2014-<?=date("Y") ?> jianli.net, all rights reserved </p>
+	</footer>
+	<?php //echo $this->element('sql_dump'); ?>					
 </body>
 </html>
