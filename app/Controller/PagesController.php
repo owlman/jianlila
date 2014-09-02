@@ -8,14 +8,7 @@ class PagesController extends AppController {
 	 *
 	 * @var array
 	 */
-	public $uses = array ();
-	
-	public $helper = array (
-			"Html",
-			"Js",
-			"Jquery" => array("Jquery")
-	);
-	
+	public $uses = array ();		
 
 	public $components = array (
 			"Session"
@@ -59,16 +52,8 @@ class PagesController extends AppController {
 		}
 	}
 	
-	public function write()	{
-		
-	}
-	
-	public function show() {
-		
-	}
-	
-	public function search(){
-		
+	public function test() {
+		return phpinfo();
 	}
 };
 ?>

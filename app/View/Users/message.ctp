@@ -1,8 +1,8 @@
-<!-- File: /app/View/User/usermsg.ctp -->  
+<!-- File: /app/View/User/message.ctp -->  
 <div class="container">
-	<h3>用户信息</h3>
+	<h3>用户基本信息</h3>
 	<p><?php
-	  	  echo $this->Html->link(
+		  echo $this->Html->link(
 	           "编辑",
 	           array("controller"=>"Users", "action"=>"edit",$user["User"]["id"])
 	      );
