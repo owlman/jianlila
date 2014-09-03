@@ -12,7 +12,8 @@ class ExperiencesController extends AppController {
 	public function index() {
 		if ($this->Session->check("uid")) {
 			$this->redirect(array(
-					"action" => "explist",
+					"controller" => "Users",
+					"action" => "message",
 					$this->Session->read("uid")
 			));
 		} else {
@@ -24,24 +25,6 @@ class ExperiencesController extends AppController {
 		}
 	}
 	
-	public function explist($uid = null)
-	{
-		$this->set("uid",$uid);
-		if ($this->Session->check("uid")) {
-			$sid = $this->Session->read("uid");			
-			if($uid === $sid || $this->Session->read("isadmin")) {
-				$this->set("exps", $this->Experience->findAllByUser_id($uid));				
-			} else {
-				$this->redirect(array("action" => "index"));
-			}
-		} else {
-			$this->Session->setFlash("对不起，您还没有登录！");
-			$this->redirect(array(
-					"controller" => "Users",
-					"action"     => "login"
-			));
-		}
-	}
 		
 	public function expadd($uid = null) {
 				
@@ -55,7 +38,8 @@ class ExperiencesController extends AppController {
 				if ($this->Experience->save($this->request->data)) {
 					$this->Session->setFlash("信息已成功添加！");
 					$this->redirect(array(
-							"action" => "explist",
+							"controller" => "Users",
+							"action" => "message",
 							$this->request->data["Experience"]["user_id"]
 					));
 				} else {
@@ -73,7 +57,11 @@ class ExperiencesController extends AppController {
 	
 	public function expedit($expid = null)
 	{
-		if ($expid == null) { $this->redirect(array("action" => "explist"));	}
+		if ($expid == null) { 
+			$this->redirect(array(
+				"controller" => "Users",
+				"action" => "ulist"));	
+		}
 		$Exp = null; 
 		// 检查用户状态
 		if ($this->Session->check("uid")) {
@@ -102,7 +90,8 @@ class ExperiencesController extends AppController {
 				$this->Session->setFlash ( "已经成功保存信息！" );
 				
 				$this->redirect (array(
-						"action" => "explist",
+						"controller" => "Users",
+						"action" => "message",
 						$Exp["Experience"]["user_id"]
 				));
 			} else {
@@ -113,7 +102,12 @@ class ExperiencesController extends AppController {
 	
 	public function expremove($expid = null)
 	{
-		if ($expid == null) { $this->redirect(array("action" => "explist"));	}
+		if ($expid == null) { 
+			$this->redirect(array(
+					"controller" => "Users",
+					"action" => "ulist"
+			));
+		}
 		// 检查用户状态
 		if ($this->Session->check("uid")) {
 			$this->Experience->id = $expid;
@@ -138,7 +132,8 @@ class ExperiencesController extends AppController {
 		if ($this->Experience->delete($expid)) {
 			$this->Session->setFlash("职务：".$Exp["Experience"]["title"]."的信息已被删除！");
 			$this->redirect(array(
-					"action" => "explist",
+					"controller" => "Users",
+					"action" => "message",
 					$Exp["Experience"]["user_id"]
 			));
 		}

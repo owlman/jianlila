@@ -1,5 +1,4 @@
- <!-- File: /app/View/Experiences/blist .ctp -->
-<div>
+<div class="span10">
 	<h3>职位列表</h3>
 	<p><?php echo $this->Html->link(
 			"添加新职位",array("controller"=>"Experiences", 
@@ -16,7 +15,7 @@
 			<th>内容简介</th>
 			<th>操作</th>
 		</tr>
-		<?php foreach ($exps as $exp)://print_r($Experience) ; ?>
+		<?php foreach ($exps as $exp): ?>
 	    <tr> 
 	    	<td><?php echo $exp["Experience"]["title"];?></td> 
 	    	<td><?php echo $exp["Experience"]["company"];?></td> 

@@ -12,7 +12,8 @@ class SkillsController extends AppController {
 	public function index() {
 		if ($this->Session->check("uid")) {
 			$this->redirect(array(
-					"action" => "slist",
+					"controller" => "Users",
+					"action" => "message",
 					$this->Session->read("uid")
 			));
 		} else {
@@ -24,25 +25,6 @@ class SkillsController extends AppController {
 		}
 	}
 	
-	public function slist($uid = null)
-	{
-		$this->set("uid", $uid);
-		if ($this->Session->check("uid")) {
-			$sid = $this->Session->read("uid");			
-			if($uid === $sid || $this->Session->read("isadmin")) {
-				$this->set("skills", $this->Skill->findAllByUser_id($uid));				
-			} else {
-				$this->redirect(array("action" => "index"));
-			}
-		} else {
-			$this->Session->setFlash("对不起，您还没有登录！");
-			$this->redirect(array(
-					"controller" => "Users",
-					"action"     => "login"
-			));
-		}
-	}
-		
 	public function sadd($uid = null) {
 				
 		if ($this->Session->check("uid")) {
@@ -55,7 +37,8 @@ class SkillsController extends AppController {
 				if ($this->Skill->save($this->request->data)) {
 					$this->Session->setFlash("信息已成功添加！");
 					$this->redirect(array(
-							"action" => "slist",
+							"controller" => "Users",
+							"action" => "message",
 							$this->request->data["Skill"]["user_id"]
 					));
 				} else {
@@ -73,7 +56,12 @@ class SkillsController extends AppController {
 	
 	public function sedit($skid = null)
 	{
-		if ($skid == null) { $this->redirect(array("action" => "slist"));	}
+		if ($skid == null) {
+			$this->redirect(array(
+					"controller" => "Users",
+					"action" => "ulist"
+			));	
+		}
 		$Skill = null; 
 		// 检查用户状态
 		if ($this->Session->check("uid")) {
@@ -102,7 +90,8 @@ class SkillsController extends AppController {
 				$this->Session->setFlash ( "已经成功保存信息！" );
 				
 				$this->redirect (array(
-						"action" => "slist",
+						"controller" => "Users",
+						"action" => "message",
 						$Skill["Skill"]["user_id"]
 				));
 			} else {
@@ -113,7 +102,12 @@ class SkillsController extends AppController {
 	
 	public function sremove($skid = null)
 	{
-		if ($skid == null) { $this->redirect(array("action" => "slist"));	}
+		if ($skid == null) { 
+			$this->redirect(array(
+					"controller" => "Users",
+					"action" => "ulist"
+			));	
+		}
 		// 检查用户状态
 		if ($this->Session->check("uid")) {
 			$this->Skill->id = $skid;
@@ -138,7 +132,8 @@ class SkillsController extends AppController {
 		if ($this->Skill->delete($skid)) {
 			$this->Session->setFlash("技能：".$Skill["Skill"]["skillname"]."的信息已被删除！");
 			$this->redirect(array(
-					"action" => "slist",
+					"controller" => "Users",
+					"action" => "message",
 					$Skill["Skill"]["user_id"]
 			));
 		}

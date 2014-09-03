@@ -1,5 +1,4 @@
- <!-- File: /app/View/Books/blist .ctp -->
-<div>
+<div class="span10">
 	<h3>作品列表</h3>
 	<p><?php echo $this->Html->link(
 			"添加新作品",array("controller"=>"Books", 
@@ -15,7 +14,7 @@
 			<th>内容简介</th>
 			<th>操作</th>
 		</tr>
-		<?php foreach ($books as $book)://print_r($book) ; ?>
+		<?php foreach ($books as $book): ?>
 	    <tr> 
 	    	<td><?php echo $book["Book"]["bookname"];?></td> 
 	    	<td><?php echo $book["Book"]["pubdate"];?></td>

@@ -1,5 +1,4 @@
- <!-- File: /app/View/Skills/slist.ctp -->
-<div>
+<div class="span10">
 	<h3>技能列表</h3>
 	<p><?php echo $this->Html->link(
 			"添加新技能",array("controller"=>"Skills", 
@@ -14,7 +13,7 @@
 			<th>熟练程度</th>
 			<th>操作</th>
 		</tr>
-		<?php foreach ($skills as $skill)://print_r($skill) ; ?>
+		<?php foreach ($skills as $skill): ?>
 	    <tr> 
 	    	<td><?php echo $skill["Skill"]["skillname"];?></td> 
 	    	<td><?php echo $skill["Skill"]["level"];?></td>

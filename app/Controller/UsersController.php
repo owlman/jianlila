@@ -32,14 +32,23 @@ class UsersController extends AppController {
 	public function message($id = null) {
 		if ($this->Session->check("uid")) {
 			$sid = $this->Session->read("uid");
-			$this->set("uid", $sid);
+			$this->set("uid", $sid);			
 			
 			if ($this->Session->read("isadmin") || $id === $sid) {
 				$this->set("isadmin", $this->Session->read("isadmin"));
 				$this->User->id = $id;
 				$t = $this->User->read();
 				if (!empty($t)) {
+					$this->loadModel("Skill");
+					$this->loadModel("Education");
+					$this->loadModel("Experience");
+					$this->loadModel("Book");
+											
 					$this->set("user",$t);
+					$this->set("edus", $this->Education->findAllByUser_id($id));
+					$this->set("exps", $this->Experience->findAllByUser_id($id));
+					$this->set("skills", $this->Skill->findAllByUser_id($id));
+					$this->set("books", $this->Book->findAllByUser_id($id));
 				} else {
 					$this->Session->setFlash("对不起，您所访问的用户不存在！");
 					$this->redirect(array("action" => "ulist"));

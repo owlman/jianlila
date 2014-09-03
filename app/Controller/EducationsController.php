@@ -12,7 +12,8 @@ class EducationsController extends AppController {
 	public function index() {
 		if ($this->Session->check("uid")) {
 			$this->redirect(array(
-					"action" => "edulist",
+					"controller" => "Users",
+					"action" => "message",
 					$this->Session->read("uid")
 			));
 		} else {
@@ -22,27 +23,8 @@ class EducationsController extends AppController {
 					"action"     => "login"
 			));
 		}
-	}
-	
-	public function edulist($uid = null)
-	{
-		$this->set("uid",$uid);
-		if ($this->Session->check("uid")) {
-			$sid = $this->Session->read("uid");			
-			if($uid === $sid || $this->Session->read("isadmin")) {
-				$this->set("edus", $this->Education->findAllByUser_id($uid));				
-			} else {
-				$this->redirect(array("action" => "index"));
-			}
-		} else {
-			$this->Session->setFlash("对不起，您还没有登录！");
-			$this->redirect(array(
-					"controller" => "Users",
-					"action"     => "login"
-			));
-		}
-	}
-		
+	}	
+			
 	public function eduadd($uid = null) {
 				
 		if ($this->Session->check("uid")) {
@@ -55,8 +37,9 @@ class EducationsController extends AppController {
 				if ($this->Education->save($this->request->data)) {
 					$this->Session->setFlash("信息已成功添加！");
 					$this->redirect(array(
-							"action" => "edulist",
-							$this->request->data["Education"]["user_id"]
+						"controller" => "Users",
+						"action" => "message",
+						$this->request->data["Education"]["user_id"]
 					));
 				} else {
 					$this->Session->setFlash("信息添加错误，请再试一次！");
@@ -73,7 +56,13 @@ class EducationsController extends AppController {
 	
 	public function eduedit($eid = null)
 	{
-		if ($eid == null) { $this->redirect(array("action" => "edulist"));	}
+		if ($eid == null) { 
+			$this->redirect(array(
+					"controller" => "Users",
+					"action" => "ulist",
+					
+			));
+		}
 		$edu = null;
 		// 检查用户状态
 		if ($this->Session->check("uid")) {
@@ -102,7 +91,8 @@ class EducationsController extends AppController {
 				$this->Session->setFlash ( "已经成功保存信息！" );
 				
 				$this->redirect (array(
-						"action" => "edulist",
+						"controller" => "Users",
+						"action" => "message",
 						$edu["Education"]["user_id"]
 				));
 			} else {
@@ -113,7 +103,13 @@ class EducationsController extends AppController {
 	
 	public function eduremove($eid = null)
 	{
-		if ($eid == null) { $this->redirect(array("action" => "edulist"));	}
+		if ($eid == null) { 
+			$this->redirect(array(
+					"controller" => "Users",
+					"action" => "ulist",
+					
+			));
+		}
 		// 检查用户状态
 		if ($this->Session->check("uid")) {
 			$this->Education->id = $eid;
@@ -138,7 +134,8 @@ class EducationsController extends AppController {
 		if ($this->Education->delete($eid)) {
 			$this->Session->setFlash("学历：".$edu["Education"]["degree"]."的信息已被删除！");
 			$this->redirect(array(
-					"action" => "edulist",
+					"controller" => "Users",
+					"action" => "message",
 					$edu["Education"]["user_id"]
 			));
 		}

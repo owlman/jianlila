@@ -1,5 +1,4 @@
- <!-- File: /app/View/Educations/eduadd.ctp -->
-<div>
+<div class="span10">
 	<h3>学历列表</h3>
 	<p><?php echo $this->Html->link(
 			"添加新学历",array("controller"=>"Educations", 
@@ -18,7 +17,7 @@
 			<th>补充说明</th>
 			<th>操作</th>
 		</tr>
-		<?php foreach ($edus as $edu)://print_r($edu) ; ?>
+		<?php foreach ($edus as $edu): ?>
 	    <tr> 
 	    	<td><?php echo $edu["Education"]["degree"];?></td> 
 	    	<td><?php echo $edu["Education"]["school"];?></td>

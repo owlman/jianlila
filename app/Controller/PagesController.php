@@ -53,7 +53,7 @@ class PagesController extends AppController {
 	}
 	
 	public function test() {
-		return phpinfo();
+		
 	}
 };
 ?>

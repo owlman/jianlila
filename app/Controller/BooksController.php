@@ -6,13 +6,14 @@ class BooksController extends AppController {
 			"Form"
 	);
 	public $components = array (
-			"Session"
+			"Session"			
 	);
 	
 	public function index() {
 		if ($this->Session->check("uid")) {
 			$this->redirect(array(
-					"action" => "blist",
+					"controller" => "Users",
+					"action" => "message",
 					$this->Session->read("uid")
 			));
 		} else {
@@ -22,26 +23,7 @@ class BooksController extends AppController {
 					"action"     => "login"
 			));
 		}
-	}
-	
-	public function blist($uid = null)
-	{
-		$this->set("uid",$uid);
-		if ($this->Session->check("uid")) {
-			$sid = $this->Session->read("uid");			
-			if($uid === $sid || $this->Session->read("isadmin")) {
-				$this->set("books", $this->Book->findAllByUser_id($uid));				
-			} else {
-				$this->redirect(array("action" => "index"));
-			}
-		} else {
-			$this->Session->setFlash("对不起，您还没有登录！");
-			$this->redirect(array(
-					"controller" => "Users",
-					"action"     => "login"
-			));
-		}
-	}
+	}	
 		
 	public function badd($uid = null) {
 				
@@ -55,7 +37,8 @@ class BooksController extends AppController {
 				if ($this->Book->save($this->request->data)) {
 					$this->Session->setFlash("信息已成功添加！");
 					$this->redirect(array(
-							"action" => "blist",
+							"controller" => "Users",
+							"action" => "message",
 							$this->request->data["Book"]["user_id"]
 					));
 				} else {
@@ -73,7 +56,12 @@ class BooksController extends AppController {
 	
 	public function bedit($bid = null)
 	{
-		if ($bid == null) { $this->redirect(array("action" => "blist"));	}
+		if ($bid == null) { 
+			$this->redirect(array(
+					"controller" => "Users",
+					"action" => "ulist"
+			));	
+		}
 		$book = null; 
 		// 检查用户状态
 		if ($this->Session->check("uid")) {
@@ -102,7 +90,8 @@ class BooksController extends AppController {
 				$this->Session->setFlash ( "已经成功保存信息！" );
 				
 				$this->redirect (array(
-						"action" => "blist",
+						"controller" => "Users",
+						"action" => "message",
 						$book["Book"]["user_id"]
 				));
 			} else {
@@ -113,7 +102,12 @@ class BooksController extends AppController {
 	
 	public function bremove($bid = null)
 	{
-		if ($bid == null) { $this->redirect(array("action" => "blist"));	}
+		if ($bid == null) { 
+			$this->redirect(array(
+					"controller" => "Users",
+					"action" => "ulist"
+			));	
+		}
 		// 检查用户状态
 		if ($this->Session->check("uid")) {
 			$this->Book->id = $bid;
@@ -138,7 +132,8 @@ class BooksController extends AppController {
 		if ($this->Book->delete($bid)) {
 			$this->Session->setFlash("作品：".$book["Book"]["bookname"]."的信息已被删除！");
 			$this->redirect(array(
-					"action" => "blist",
+					"controller" => "Users",
+					"action" => "message",
 					$book["Book"]["user_id"]
 			));
 		}
