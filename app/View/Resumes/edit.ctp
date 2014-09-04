@@ -1,6 +1,6 @@
 
 <div class="span10">
-	<h2>写简历：</h2>
+	<h2>改简历：</h2>
 	<p><?php
 		  echo $this->Html->link(
 	           "添加教育经历",
@@ -64,13 +64,13 @@
 		));
 		echo $this->Html->div("control-group",$label.$email);
 		
-		
 		$edus = $this->Form->input("educations", array(
 				"class" => "checkbox inline",
 				"label" => false,
+				"type" => "select",				
 				"options" => $educations,
 				"multiple" => "checkbox",
-				"type" => "select",
+				"selected" => $showEdu,
 				"div" => "controls"
 		));
 		$label = $this->Form->label("educations","教育经历：", array(
@@ -85,6 +85,7 @@
 				"options" => $experiences,
 				"multiple" => "checkbox",
 				"type" => "select",
+				"selected" => $showExp,				
 				"div" => "controls"
 		));
 		$label = $this->Form->label("experiences","职场经历：", array(
@@ -99,6 +100,7 @@
 				"options" => $skills,
 				"multiple" => "checkbox",
 				"type" => "select",
+				"selected" => $showSk,				
 				"div" => "controls"
 		));
 		$label = $this->Form->label("skills","掌握技能：", array(
@@ -113,6 +115,7 @@
 				"options" => $books,
 				"multiple" => "checkbox",
 				"type" => "select",
+				"selected" => $showBk,				
 				"div" => "controls"
 		));
 		$label = $this->Form->label("books","出版书籍：", array(
@@ -148,6 +151,9 @@
 				"class" => "control-label"
 		));
 		echo $this->Html->div("control-group",$label.$desc);
+		
+		echo $this->Form->input("user_id",array("type" => "hidden"));
+		echo $this->Form->input("id",array("type" => "hidden"));		
 		
 		$submit = $this->Form->submit("完成", array(
 				"div" => array("class" => "control-label"),

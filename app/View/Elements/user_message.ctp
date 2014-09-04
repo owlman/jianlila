@@ -2,25 +2,11 @@
 	<h3>基本信息</h3>
 	<p><?php
 		  echo $this->Html->link(
-	           "编辑",
+	           "修改信息",
 	           array("controller"=>"Users", "action"=>"edit",$user["User"]["id"])
 	      );
 	      
-	      if($user["User"]["id"] === $uid) {
-	         echo " | ";      
-	         echo $this->Html->link(
-	             "注销登录",
-	             array("controller" => "Users", "action" => "logout")
-	         );
-	      }
-	      if($isadmin) {
-	         echo " | ";      
-	         echo $this->Html->link(
-	             "查看所有用户",
-	             array("controller" => "Users", "action" => "ulist")
-	         );
-	      }
-	?></p>
+	 ?></p>
 	<table class="table table-bordered table-striped">		
 	    <tr>  
 	        <td>用户名：</td>

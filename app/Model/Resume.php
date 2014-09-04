@@ -1,5 +1,5 @@
 <?php
-class ResumesController extends AppController {
+class Resume extends AppModel {
 	
 	public $name = "Resume";	
 };
