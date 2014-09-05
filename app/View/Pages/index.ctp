@@ -9,7 +9,7 @@
     	<p>
     		我们将为您提供数十个精美模版，以便您根据自己的需求定制不同的简历!
     	</p>
-    	<a class="btn btn-primary btn-xlarge" href="/Resumes/write/<?=$this->Session->read("uid");?>">去试试</a>
+    	<a class="btn btn-primary btn-xlarge" href="/Resumes">去试试</a>
     </div>
     <div class="span4">
     	<h2>晒简历</h2>

@@ -2,10 +2,15 @@
 <h2>欢迎回来，<?=$user["User"]["username"] ?>！</h2>
 <p><?php 
 if($user["User"]["id"] === $uid) {
-	echo $this->Html->link(
-			"注销登录",
-			array("controller" => "Users", "action" => "logout")
-	);
+	echo $this->Html->link("注销登录", array(
+			"controller" => "Users", 
+			"action" => "logout"
+	));
+	echo " | ";
+	echo $this->Html->link("查看我的简历",array(
+			"controller"=>"Resumes",
+			"action"=>"index"
+	));
 }
 if($isadmin) {
 	echo " | ";

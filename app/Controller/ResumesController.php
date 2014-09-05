@@ -14,8 +14,7 @@ class ResumesController extends AppController {
 	public function index() {
 		if ($this->Session->check("uid")) {
 			$this->redirect(array(
-					"controller" => "Users",
-					"action" => "message",
+					"action" => "reslist",
 					$this->Session->read("uid")
 			));
 		} else {
@@ -27,6 +26,23 @@ class ResumesController extends AppController {
 		}
 	}
 	
+	// 显示个人简历列表
+	public function reslist($uid = null) {
+		if ($this->Session->check("uid") 
+			&& $uid===$this->Session->read("uid")) {
+			$this->set("uid",$uid);
+				
+			$this->set("resumes", $this->Resume->findAllByUser_id($uid));			
+		} else {
+			$this->Session->setFlash("对不起，您还没有登录！");				
+			$this->redirect(array(
+					"controller" => "Users",
+					"action" => "login"
+			));
+		}
+	}
+	
+	// 写简历
 	public function write($uid = null)	{
 		if ($this->Session->check("uid")) {
 			$sid = $this->Session->read("uid");
@@ -57,17 +73,13 @@ class ResumesController extends AppController {
 			} else {
 				$this->Session->setFlash("对不起，您所访问的用户不存在！");
 				$this->redirect(array(
-					"controller" => "Pages",
-						"action" => "display",
-						"index"
+						"action" => "index",						
 				));
 			}
 		} else {
 			$this->Session->setFlash("对不起，您不是当前用户！");
 			$this->redirect(array(
-					"controller" => "Users",
-					"action" => "message",
-					$uid
+					"action" => "index",						
 			));
 		}
 
@@ -124,15 +136,15 @@ class ResumesController extends AppController {
 			$this->request->data["Resume"]["skills"] 
 				= json_encode($this->request->data["Resume"]["skills"]);
 			$this->request->data["Resume"]["books"]
-			= json_encode($this->request->data["Resume"]["books"]);
+				= json_encode($this->request->data["Resume"]["books"]);
 			$this->request->data["Resume"]["user_id"] = $uid;
 				
 			if ($this->Resume->save($this->request->data)) {
 				$this->Session->setFlash ( "已经成功保存信息！" );
 		
 				$this->redirect (array(
-						"controller" => "Users",
-						"action" => "message",
+						"controller" => "Resumes",
+						"action" => "reslist",
 						$uid
 				));
 			} else {
@@ -142,13 +154,11 @@ class ResumesController extends AppController {
 		
 	}
 	
+	// 修改简历
 	public function edit($res_id = null) {
 		if ($res_id == null) {
 			$this->redirect(array(
-					"controller" => "Pages",
-					"action" => "display",
-					"index"
-						
+					"action" => "index",						
 			));
 		}
 		$res = null;
@@ -234,20 +244,59 @@ class ResumesController extends AppController {
 				= json_encode($this->request->data["Resume"]["books"]);
 				
 			if ($this->Resume->save($this->request->data)) {
-				$this->Session->setFlash ( "已经成功保存信息！" );		
+				$this->Session->setFlash ( "已经成功保存简历！" );		
 				$this->redirect (array(
-						"controller" => "Users",
-						"action" => "message",
+						"controller" => "Resumes",
+						"action" => "reslist",
 						$res["Resume"]["user_id"]
 				));
 			} else {
 				$this->Session->setFlash ( "出错啦！" );
 			}
-		}
-		
-		
+		}		
 	}
 	
+	// 删除简历
+	public function remove($rid = null)
+	{
+		if ($rid == null) {
+			$this->redirect(array(
+					"action" => "index",
+						
+			));
+		}
+		$res = null;
+		// 检查用户状态
+		if ($this->Session->check("uid")) {
+			$this->Resume->id = $rid;
+			$res = $this->Resume->read();
+			if (empty($res)){
+				$this->Session->setFlash("该信息不存在！");
+				$this->redirect(array("action" => "index"));
+			} elseif($res["Resume"]["user_id"] !== $this->Session->read("uid")) {
+				$this->Session->setFlash("对不起，您没有删除该简历的权限！");
+				$this->redirect(array("action" => "index"));
+			}
+		} else {
+			$this->Session->setFlash("对不起，您还没有登陆！");
+			$this->redirect(array(
+					"controller" => "Users",
+					"action"     => "login"
+			));
+		}
+			
+		
+		if ($this->Resume->delete($rid)) {
+			$this->Session->setFlash("简历：".$res["Resume"]["resume_label"]."已被删除！");
+			$this->redirect(array(
+					"controller" => "Resumes",
+					"action" => "reslist",
+					$res["Resume"]["user_id"]
+			));
+		}
+	}	
+	
+	// 显示公开简历列表
 	public function show() {
 		$pub_resume = $this->Resume->find("all", array(
 				"conditions" => array("Resume.ispublic" => true)
@@ -255,6 +304,7 @@ class ResumesController extends AppController {
 		$this->set("resumes", $pub_resume);
 	}
 	
+	// 搜索公开简历
 	public function search(){
 	
 	}
