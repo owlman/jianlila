@@ -271,7 +271,7 @@ class ResumesController extends AppController {
 			$this->Resume->id = $rid;
 			$res = $this->Resume->read();
 			if (empty($res)){
-				$this->Session->setFlash("该信息不存在！");
+				$this->Session->setFlash("该简历不存在！");
 				$this->redirect(array("action" => "index"));
 			} elseif($res["Resume"]["user_id"] !== $this->Session->read("uid")) {
 				$this->Session->setFlash("对不起，您没有删除该简历的权限！");
@@ -307,6 +307,64 @@ class ResumesController extends AppController {
 	// 搜索公开简历
 	public function search(){
 	
+	}
+	
+	// 基本简历 
+	public function baseResume($rid = null) {
+		if($rid == null) {
+			if($this->Session->check("uid")) {
+				$this->redirect(array(
+						"action" => "reslist",
+						$this->Session->read("uid")
+				));
+			} else {
+				$this->redirect(array("action" => "show"));
+			}
+		}
+		$this->Resume->id = $rid;
+		$res = $this->Resume->read();
+		if(!empty($res)) {
+			if ($this->Session->check("uid") 
+				|| $res["Resume"]["ispublic"]) {
+				$this->set("resume", $res);
+				$this->loadModel("Skill");
+				$this->loadModel("Education");
+				$this->loadModel("Experience");
+				$this->loadModel("Book");
+
+				// 读取教育经历
+				$temp = $this->Education->find("all", array(
+					"conditions" => array(
+						"Education.id" => json_decode($res["Resume"]["educations"]))
+				));
+				$this->set("edus", $temp);
+
+				// 读取教育经历
+				$temp = $this->Experience->find("all", array(
+						"conditions" => array(
+								"Experience.id" => json_decode($res["Resume"]["experiences"]))
+				));
+				$this->set("exps", $temp);
+				
+				// 读取教育经历
+				$temp = $this->Skill->find("all", array(
+						"conditions" => array(
+								"Skill.id" => json_decode($res["Resume"]["skills"]))
+				));
+				$this->set("sks", $temp);
+				
+				// 读取教育经历
+				$temp = $this->Book->find("all", array(
+						"conditions" => array(
+								"Book.id" => json_decode($res["Resume"]["books"]))
+				));
+				$this->set("bks", $temp);
+				
+			}
+		} else {
+			
+			self::baseResume(null);
+		}
 	}
 }
 ?>
