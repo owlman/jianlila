@@ -9,7 +9,15 @@
 		</tr>
 		<?php foreach ($resumes as $res): ?>
 	    <tr> 
-	    	<td><?php echo $res["Resume"]["resume_label"];?></td> 
+	    	<td><?php 
+	    		echo $this->Html->link(
+						$res["Resume"]["resume_label"],
+						array("controller"=>"Resumes",
+							"action" => "baseResume",
+							$res["Resume"]["id"]
+						)
+				);
+	    	?></td> 
 	    	<td><?php 
 	    		echo $res["Resume"]["first_name"]." ".$res["Resume"]["last_name"];
 	    	?></td>
