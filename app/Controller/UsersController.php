@@ -3,7 +3,8 @@ class UsersController extends AppController {
 	public $name = "Users";
 	public $helper = array (
 			"Html",
-			"Form" 
+			"Form" ,
+			"Js"
 	);
 	public $components = array (
 			"Session" 
@@ -152,7 +153,27 @@ class UsersController extends AppController {
 			$this->redirect(array("action" => "ulist"));
 		}
 		
-		if ($this->User->delete($id)) {
+		$this->loadModel("Skill");
+		$this->loadModel("Education");
+		$this->loadModel("Experience");
+		$this->loadModel("Book");
+		$this->loadModel("Resume");
+		$this->Education->deleteAll(array(
+				"Education.user_id" => $id
+		));
+		$this->Experience->deleteAll(array(
+				"Experience.user_id" => $id
+		));
+		$this->Skill->deleteAll(array(
+				"Skill.user_id" => $id
+		));
+		$this->Book->deleteAll(array(
+				"Book.user_id" => $id
+		));
+		$this->Resume->deleteAll(array(
+				"Resume.user_id" => $id
+		));
+		if ($this->User->delete($id)) {			
 			$this->Session->setFlash("用户：".$user["User"]["username"]."已被删除！");
 			$this->redirect(array("action" => "ulist"));	
 		}
@@ -175,6 +196,7 @@ class UsersController extends AppController {
 							"action" => "message",
 							$someone["User"]["id"] 
 					));
+					//$this->Js->redirect("javascript:history.back(-1)");
 				} else {
 					$this->Session->setFlash("用户名或密码错误！");
 				}
