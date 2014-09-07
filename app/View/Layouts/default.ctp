@@ -6,7 +6,7 @@
 	<?php		
 		//echo $this->Html->css('cake.generic');
 		echo $this->Html->css('bootstrap');
-		echo $this->Html->css('boot strap-responsive');		
+		echo $this->Html->css('bootstrap-responsive');		
 		echo $this->Html->css('style');
 		
 		echo $this->Html->script("jquery");

@@ -306,7 +306,87 @@ class ResumesController extends AppController {
 	
 	// 搜索公开简历
 	public function search(){
+		if ($this->request->is( "post" )) {
+			switch($this->data["Resume"]["searchlist"]) {
+				case 0:
+					$rs = self::searchStudy($this->data["Resume"]["searchbox"]);
+					break;
+				case 1:
+					$rs = self::searchSkill($this->data["Resume"]["searchbox"]);
+					break;					
+				case 2:
+					$rs = self::searchTitle($this->data["Resume"]["searchbox"]);						
+					break;
+			}
+			$this->set("resumes", $rs);
+			if ($rs == array()) {
+				$this->set("notfind","对不起，没有找到您所需要的简历。。");
+			}
+			
+		}
+	}
 	
+	private function searchStudy($key = null)
+	{
+		if ($key == null) {return null;}
+		$rs = array();
+		$this->loadModel("Education");
+		$temp = $this->Education->find("all", array(
+				"conditions" => array("Education.study LIKE" => "%".$key."%")
+		));
+		foreach ($temp as $i){
+			$trs = $this->Resume->find("all", array(
+					"conditions" => array(
+							"Resume.ispublic" => true,
+							"Resume.educations LIKE" => '%"'.$i["Education"]["id"].'"%'
+					)
+			));
+			$rs = array_merge($rs,$trs);
+		}
+		return $rs;
+		
+	}
+	
+	private function searchSkill($key = null)
+	{
+		if ($key == null) {return null;}
+		$rs = array();
+		$this->loadModel("Skill");
+		$temp = $this->Skill->find("all", array(
+				"conditions" => array("Skill.skillname LIKE" => "%".$key."%")
+		));
+		foreach ($temp as $i){
+			$trs = $this->Resume->find("all", array(
+					"conditions" => array(
+							"Resume.ispublic" => true,
+							"Resume.skills LIKE" => '%"'.$i["Skill"]["id"].'"%'
+					)
+			));
+			$rs = array_merge($rs,$trs);
+		}
+		
+		return $rs;
+	}
+	
+	private function searchTitle($key = null)
+	{
+		if ($key == null) {return null;}
+		$rs = array();
+		$this->loadModel("Experience");
+		$temp = $this->Experience->find("all", array(
+				"conditions" => array("Experience.title LIKE" => "%".$key."%")
+		));
+		foreach ($temp as $i){
+			$trs = $this->Resume->find("all", array(
+					"conditions" => array(
+							"Resume.ispublic" => true,
+							"Resume.experiences LIKE" => '%"'.$i["Experience"]["id"].'"%'
+					)
+			));
+			$rs = array_merge($rs,$trs);
+		}
+		
+		return $rs;		
 	}
 	
 	// 基本简历 
