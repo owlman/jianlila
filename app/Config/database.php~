@@ -66,10 +66,10 @@ class DATABASE_CONFIG {
 	public $default = array (
 			'datasource' => 'Database/Mysql',
 			'persistent' => false,
-			'host' => 'localhost',
-			'login' => 'root',
-			'password' => '00000000',
-			'database' => 'jianlila',
+			'host' => 'vps.owlman.org',
+			'login' => 'lingjie',
+			'password' => '19811203',
+			'database' => 'lingjie',
 			'prefix' => '',
 			'encoding' => 'utf8' 
 	);
