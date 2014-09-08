@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 08, 2014 at 02:55 AM
+-- Generation Time: Sep 08, 2014 at 03:59 AM
 -- Server version: 5.5.38
 -- PHP Version: 5.4.4-14+deb7u14
 
@@ -33,7 +33,14 @@ CREATE TABLE IF NOT EXISTS `books` (
   `pubdate` date NOT NULL,
   `description` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `books`
+--
+
+INSERT INTO `books` (`id`, `user_id`, `bookname`, `pubdate`, `description`) VALUES
+(1, 2, '《如果我统一了欧洲》', '2014-09-08', '解决二战');
 
 -- --------------------------------------------------------
 
@@ -46,12 +53,19 @@ CREATE TABLE IF NOT EXISTS `educations` (
   `user_id` int(10) unsigned NOT NULL,
   `school` varchar(40) NOT NULL,
   `degree` varchar(40) NOT NULL,
-  `Study` varchar(128) NOT NULL,
+  `study` varchar(128) NOT NULL,
   `in_date` date NOT NULL,
   `out_date` date NOT NULL,
   `description` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `educations`
+--
+
+INSERT INTO `educations` (`id`, `user_id`, `school`, `degree`, `study`, `in_date`, `out_date`, `description`) VALUES
+(1, 2, '浙江大学', '博士', '计算机游戏开发', '2014-09-08', '2018-09-08', '测试');
 
 -- --------------------------------------------------------
 
@@ -68,7 +82,14 @@ CREATE TABLE IF NOT EXISTS `experiences` (
   `out_date` date NOT NULL,
   `description` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `experiences`
+--
+
+INSERT INTO `experiences` (`id`, `user_id`, `company`, `title`, `in_date`, `out_date`, `description`) VALUES
+(1, 2, '法兰西帝国', '程序员', '2014-09-08', '2020-09-08', '测试');
 
 -- --------------------------------------------------------
 
@@ -79,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `experiences` (
 CREATE TABLE IF NOT EXISTS `resumes` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_id` int(10) unsigned NOT NULL,
-  `resume_name` varchar(128) NOT NULL,
+  `resume_label` varchar(128) NOT NULL,
   `email` varchar(255) NOT NULL,
   `first_name` varchar(40) NOT NULL,
   `last_name` varchar(40) NOT NULL,
@@ -91,7 +112,14 @@ CREATE TABLE IF NOT EXISTS `resumes` (
   `ispublic` tinyint(1) NOT NULL,
   `description` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `resumes`
+--
+
+INSERT INTO `resumes` (`id`, `user_id`, `resume_label`, `email`, `first_name`, `last_name`, `educations`, `experiences`, `skills`, `books`, `objective`, `ispublic`, `description`) VALUES
+(2, 2, '拿破伦新简历0', 'owlmam@owlman.org', '拿', '破伦', '["1"]', '["1"]', '["1"]', '["1"]', '天顶星帝国皇帝', 1, ' 建军节');
 
 -- --------------------------------------------------------
 
@@ -105,7 +133,14 @@ CREATE TABLE IF NOT EXISTS `skills` (
   `skillname` varchar(40) NOT NULL,
   `level` varchar(40) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `skills`
+--
+
+INSERT INTO `skills` (`id`, `user_id`, `skillname`, `level`) VALUES
+(1, 2, 'C++', '专家');
 
 -- --------------------------------------------------------
 
@@ -123,14 +158,15 @@ CREATE TABLE IF NOT EXISTS `users` (
   `isadmin` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`,`email`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `first_name`, `last_name`, `isadmin`) VALUES
-(1, 'admin', '00000000', 'admin@owlman.org', 'ling', 'jie', 1);
+(1, 'admin', '00000000', 'admin@owlman.org', 'ling', 'jie', 1),
+(2, 'lingjie', '00000000', 'owlmam@owlman.org', '拿', '破伦', 0);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

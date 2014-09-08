@@ -117,8 +117,7 @@ class EducationsController extends AppController {
 			if (empty($edu)){
 				$this->Session->setFlash("该信息不存在！");
 				$this->redirect(array("action" => "index"));
-			} elseif($edu["Education"]["user_id"] !== $this->Session->read("uid")
-				    || !$this->Session->read("isadmin")) {
+			} elseif($edu["Education"]["user_id"] !== $this->Session->read("uid")) {
 				$this->Session->setFlash("对不起，您没有删除该信息的权限！");
 				$this->redirect(array("action" => "index"));
 			}
