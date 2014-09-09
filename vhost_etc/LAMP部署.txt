@@ -5,7 +5,7 @@
 	命令：cd jianlila
 	    mkdir app/tmp
 	    chown -R www-data app/tmp
-第二步，确保LAMP环境已经正确安装，apache的rewrite模块也已经被激活。将本目录下的vhost_etc/vps_host拷贝到/etc/apache2/sites-enabled/目录下（如果您在第一步中放源码的目录与本例不同，请自行调整一下vps_host文件中的目录设置），然后重启apache：
+第二步，确保LAMP环境已经正确安装，apache的rewrite模块也已经被激活。将本目录下的vhost_etc/vps_host拷贝到/etc/apache2/sites-enabled/目录下（请自行调整一下vps_host文件中的目录设置），然后重启apache：
 	命令：cp vhost_etc/vps_host /etc/apache2/sites-enabled/ 
 		service apache2 restart
 		
