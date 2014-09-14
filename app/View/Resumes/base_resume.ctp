@@ -16,7 +16,7 @@
 	<div class="item">
 		<table class="span10">
 			<tr>
-				<td class="span2"><?=$t["Education"]["degree"]; ?></td>
+				<td class="span2"><?=$t["Education"]["study"]." ".$t["Education"]["degree"]; ?></td>
 				<td class="span2"><?=$t["Education"]["school"]; ?></td>
 				<td class="span4"><?=$t["Education"]["in_date"]."——".$t["Education"]["out_date"]; ?></td>
 			</tr>
