@@ -1,0 +1,11 @@
+{
+	"config": {
+    	"vendor-dir": "Vendor"
+	},
+
+	"require": {
+	    "twitter/bootstrap": "*",
+	    "slywalker/boost_cake": "*"
+	}
+}
+
