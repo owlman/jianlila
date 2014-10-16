@@ -5,8 +5,12 @@
 	<title>简历啦【Demo】</title>
 	<?php		
 		//echo $this->Html->css('cake.generic');
-		echo $this->Html->css('bootstrap');
-		echo $this->Html->css('bootstrap-responsive');		
+		echo $this->Html->css("bootstrap.min");
+		echo $this->Html->css("bootstrap-responsive.min");		
+		echo $this->Html->css("font-awesome.min");
+		echo "<!--[if IE 7]>";
+		echo $this->Html->css("font-awesome-ie7.min");		
+		echo "<![endif]-->";
 		echo $this->Html->css('style');
 		
 		echo $this->Html->script("jquery");
@@ -23,7 +27,9 @@
 		<div class="navbar navbar-default navbar-fixed-top">
 	      <div class="navbar-inner">
 	        <div class="container">
-	          <a class="brand" href="/pages/index">简历啦</a>
+	          <a class="brand" href="/pages/index">
+	          	简历啦
+	          </a>
 	          <div class="nav-collapse">
 	            <ul class="nav navbar-nav">
 	              <li><a href="#about">本站简介</a></li>
@@ -32,14 +38,24 @@
 	            <?php if($this->Session->check("uid")):?>
 	            <ul class="nav navbar-nav pull-right">
 	              <li><a href="/users/message/<?=$this->Session->read("uid") ?>">
-	              		Hi! <?=$this->Session->read("username") ?>
+	              		<i class="icon-user"></i>
+	              		<?=$this->Session->read("username") ?>
 	              </a></li>
-	              <li><a href="/users/logout">登出</a></li>
+	              <li><a href="/users/logout">
+	              	<i class="icon-signout"></i>
+	              	登出
+	              	</a></li>
 	            </ul>
 	            <?php else:?>
 	            <ul class="nav navbar-nav pull-right">
-	              <li><a href="/users/login">登录</a></li>
-	              <li><a href="/users/add">注册</a></li>
+	              <li><a href="/users/login">
+	              	<i class="icon-signin"></i>	              	
+	              	登录
+	              </a></li>
+	              <li><a href="/users/add">
+	              	<i class="icon-user"></i>
+	              	注册
+	              </a></li>
 	            </ul>
 	            <?php endif;?>
 	          </div><!--/.nav-collapse -->

@@ -1,5 +1,4 @@
-<div class="span10">
-	<h3>学历列表</h3>
+<div id="eductions" class="tab-pane fade span10">
 	<p><?php echo $this->Html->link(
 			"添加新学历",array("controller"=>"Educations", 
 							"action"=>"eduadd",

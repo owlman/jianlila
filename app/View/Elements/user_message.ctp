@@ -1,5 +1,4 @@
-<div class="span10">
-	<h3>基本信息</h3>
+<div id="userMessage" class="tab-pane fade span10">
 	<p><?php
 		  echo $this->Html->link(
 	           "修改信息",

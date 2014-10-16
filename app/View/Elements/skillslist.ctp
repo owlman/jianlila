@@ -1,5 +1,4 @@
-<div class="span10">
-	<h3>技能列表</h3>
+<div id="skills" class="tab-pane fade span10">
 	<p><?php echo $this->Html->link(
 			"添加新技能",array("controller"=>"Skills", 
 							"action"=>"sadd",

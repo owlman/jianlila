@@ -1,3 +1,4 @@
+<div id="myresume" class="tab-pane fade in active span10">
 	<table class="table table-bordered table-striped">
 		<tr>
 	  		<th>简历名称</th>
@@ -51,3 +52,4 @@
 	    </tr>  
 	    <?php endforeach; ?>  
 	</table>
+</div>	

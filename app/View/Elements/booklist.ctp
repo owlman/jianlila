@@ -1,5 +1,4 @@
-<div class="span10">
-	<h3>作品列表</h3>
+<div id="books" class="tab-pane fade span10">
 	<p><?php echo $this->Html->link(
 			"添加新作品",array("controller"=>"Books", 
 							"action"=>"badd",

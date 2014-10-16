@@ -1,5 +1,4 @@
-<div class="span10">
-	<h3>职位列表</h3>
+<div id="experiences" class="tab-pane fade span10">
 	<p><?php echo $this->Html->link(
 			"添加新职位",array("controller"=>"Experiences", 
 							"action"=>"expadd",
