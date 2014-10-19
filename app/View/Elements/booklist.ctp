@@ -1,41 +1,46 @@
-<div id="books" class="tab-pane fade span10">
-	<p><?php echo $this->Html->link(
-			"添加新作品",array("controller"=>"Books", 
-							"action"=>"badd",
-							$uid
-			));
-	?></p>
+<div id="books" class="tab-pane fade">
+	<div class="pull-right item-operation"><?php echo $this->Html->link(
+			$this->Html->tag("i", "",array("class" => "icon-plus icon-large"))." 添加",
+			array("controller"=>"Books", 
+				  "action"=>"badd",
+				  $uid
+			),
+			array("class" => "btn btn-info", "escape" => false)			
+		);
+	?></div>
+	<div class="clear"></div>
 	
-	 <table class="table table-bordered table-striped">
-		<tr>
-	  		<th>书名</th>
-			<th>出版日期</th>
-			<th>内容简介</th>
-			<th>操作</th>
-		</tr>
+	<table class="table">
 		<?php foreach ($books as $book): ?>
-	    <tr> 
-	    	<td><?php echo $book["Book"]["bookname"];?></td> 
-	    	<td><?php echo $book["Book"]["pubdate"];?></td>
-	    	<td><?php echo $book["Book"]["description"];?></td>
-	    	<td><?php
-	    			echo $this->Html->link(
-	    				"编辑",
-	    				array("controller" => "Books",
-	    				      "action" => "bedit",
-	    					  $book["Book"]["id"]
-	    			    )
-	    			 );
-					echo "|";
-	    			 echo $this->Html->link(
-						"删除",
-						array("controller" => "Books", 
-							  "action" => "bremove", 
-							  $book["Book"]["id"]
-						)
-				    );
-	    	?></td>    	    	
-	    </tr>  
-	    <?php endforeach; ?>  
+	    <tr>
+	    	<td>
+	    		<h3><?=$book["Book"]["bookname"] ?></h3>
+	    		<p> <strong>出版日期：</strong>
+	    			 <?=$book["Book"]["pubdate"] ?>
+	    		</p>
+	    		<p> <strong>补充说明：</strong>
+	    			 <?=$book["Book"]["description"] ?>
+	    		</p>	    		
+	    	</td>
+	    	<td><div class="pull-right item-operation"><?php
+    			echo $this->Html->link(
+					$this->Html->tag("i", "",array("class" => "icon-edit icon-large")),
+					array("controller" => "Books",
+	    			      "action" => "bedit",
+	    				  $book["Book"]["id"]
+	    			),
+    				array("class" => "btn", "escape" => false)
+				);
+				echo $this->Html->link(
+					$this->Html->tag("i", "",array("class" => "icon-trash icon-large")),
+					array("controller" => "Books", 
+						  "action" => "bremove", 
+						  $book["Book"]["id"]
+					),
+    				array("class" => "btn", "escape" => false)
+				);	    		
+		    ?></div></td>
+	    </tr>
+	    <?php endforeach; ?> 
 	</table>
 </div>

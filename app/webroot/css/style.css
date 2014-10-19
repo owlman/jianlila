@@ -1,9 +1,7 @@
-body {
-	
-}
 header {
 	height: 60px;
 }
+
 footer {
 	height: 60ox;
 	margin-top:30px;
@@ -94,7 +92,7 @@ form .error, form .error-message {
 
 .message h4 {
 	color: #c09853;
-	margin: 0;
+	margin: 0px;
 }
 
 .cake-error, p.error, .error-message {
@@ -118,4 +116,26 @@ p.error {
 	color: #E9573F;
  	background-color: #f2dede;
   	border-color: #eed3d7;	
+}
+
+.bottom {
+	background-color: #F8F8F8;
+	height: 30px;
+}
+
+.item-operation {
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#userMessage {
+	border: 1px solid #ddd;	
+	border-radius:8px;
+	
+}
+
+#userid {
+	background-color: #F8F8F8;
+	padding: 5px;	
 }

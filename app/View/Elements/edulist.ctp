@@ -1,46 +1,44 @@
-<div id="eductions" class="tab-pane fade span10">
-	<p><?php echo $this->Html->link(
-			"添加新学历",array("controller"=>"Educations", 
-							"action"=>"eduadd",
-							$uid
-			));
-	?></p>
-	
-	 <table class="table table-bordered table-striped">
-		<tr>
-	  		<th>学历</th>
-			<th>学校</th>
-			<th>专业</th>
-			<th>入学时间</th>
-			<th>毕业时间</th>
-			<th>补充说明</th>
-			<th>操作</th>
-		</tr>
+<div id="eductions" class="tab-pane fade">
+	<div class="pull-right item-operation"><?php echo $this->Html->link(
+			$this->Html->tag("i", "",array("class" => "icon-plus icon-large"))." 添加",
+			array("controller"=>"Educations", 
+				  "action"=>"eduadd",
+				  $uid
+			),
+			array("class" => "btn btn-info", "escape" => false)			
+		);
+	?></div>
+	<div class="clear"></div>
+	 <table class="table">
 		<?php foreach ($edus as $edu): ?>
-	    <tr> 
-	    	<td><?php echo $edu["Education"]["degree"];?></td> 
-	    	<td><?php echo $edu["Education"]["school"];?></td>
-	    	<td><?php echo $edu["Education"]["study"];?></td>
-	    	<td><?php echo $edu["Education"]["in_date"];?></td>
-	    	<td><?php echo $edu["Education"]["out_date"];?></td>
-	    	<td><?php echo $edu["Education"]["description"];?></td>
-	    	<td><?php
-	    			echo $this->Html->link(
-	    				"编辑",
-	    				array("controller" => "Educations",
-	    				      "action" => "eduedit",
-	    					  $edu["Education"]["id"]
-	    			    )
-	    			 );
-					echo "|";
-	    			 echo $this->Html->link(
-						"删除",
-						array("controller" => "Educations", 
-							  "action" => "eduremove", 
-							  $edu["Education"]["id"]
-						)
-				    );
-	    	?></td>    	    	
+	    <tr>
+	    	<td>
+	    		<h3><?=$edu["Education"]["study"]."专业，".$edu["Education"]["degree"] ?></h3>
+	    		<p> <strong><?=$edu["Education"]["school"]."：   " ?></strong>
+	    			 <?=$edu["Education"]["in_date"]."至".$edu["Education"]["out_date"] ?>
+	    		</p>
+	    		<p> <strong>补充说明：</strong>
+	    			<?=$edu["Education"]["description"] ?>
+	    		</p>
+	    	</td>
+	    	<td><div class="pull-right item-operation"><?php
+    			echo $this->Html->link(
+					$this->Html->tag("i", "",array("class" => "icon-edit icon-large")),
+					array("controller" => "Educations",
+    				      "action" => "eduedit",
+    					  $edu["Education"]["id"]
+    			    ),
+    				array("class" => "btn", "escape" => false)
+				);
+				echo $this->Html->link(
+					$this->Html->tag("i", "",array("class" => "icon-trash icon-large")),
+					array("controller" => "Educations", 
+						  "action" => "eduremove", 
+						  $edu["Education"]["id"]
+					),
+    				array("class" => "btn", "escape" => false)
+				);	    		
+		    ?></div></td>
 	    </tr>  
 	    <?php endforeach; ?>  
 	</table>

@@ -67,8 +67,10 @@
 	<!--主体部分开始 -->	
 	<div id="wrap">	
 		<div class="container">
-			<?php echo $this->Session->flash(); ?>		
-			<?php echo $this->fetch('content'); ?>
+			<div class="row">
+				<?php echo $this->Session->flash(); ?>		
+				<?php echo $this->fetch("content"); ?>
+			</div>
 		</div>
 		<div class="clear"></div>
 	</div>

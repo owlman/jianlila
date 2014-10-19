@@ -1,54 +1,60 @@
-<div id="myresume" class="tab-pane fade in active span10">
-	<table class="table table-bordered table-striped">
-		<tr>
-	  		<th>简历名称</th>
-			<th>所有者</th>
-			<th>目标职位</th>
-			<th>模版</th>
-			<th>联系他</th>			
-			<th>可执行的操作</th>
-		</tr>
+<div id="myresume" class="tab-pane fade in active">
+	<div class="pull-right item-operation"><?php echo $this->Html->link(
+			$this->Html->tag("i", "",array("class" => "icon-plus icon-large"))." 添加",
+			array(
+				"controller"=>"Resumes", 
+				"action"=>"write",
+				$this->Session->read("uid")
+			), 
+			array("class" => "btn btn-info", "escape" => false)
+		);			
+	?></div>
+	<div class="clear"></div>		
+	<table class="table">
 		<?php foreach ($resumes as $res): ?>
-	    <tr> 
-	    	<td><?php 
+	    <tr>
+	    	 	<td><h3><?php 
 	    		echo $this->Html->link(
-						$res["Resume"]["resume_label"],
-						array("controller"=>"Resumes",
-							"action" => "baseResume",
-							$res["Resume"]["id"]
-						)
+					$res["Resume"]["resume_label"],
+					array("controller"=>"Resumes",
+						"action" => "baseResume",
+						$res["Resume"]["id"]
+				   )
 				);
-	    	?></td> 
-	    	<td><?php 
-	    		echo $res["Resume"]["first_name"]." ".$res["Resume"]["last_name"];
-	    	?></td>
-	    	<td><?php echo $res["Resume"]["objective"];?></td>
-	    	<td><?php
-	    		echo "模版1 | 模版2";
-	    	?></td>
-	    	<td>
-	    		<a href="mailto:<?=$res["Resume"]["email"]; ?>">发邮件</a>
+	    	?></h3>
+	    	<p><strong>申请人：</strong>
+	    		<?=$res["Resume"]["first_name"]." ".$res["Resume"]["last_name"]?> 
+	    	</p>
+	    	<p><strong>申请职位：</strong>
+	    		<?=$res["Resume"]["objective"] ?>
+	    	</p>
 	    	</td>
-	    	<td><?php
+	    	<td><div class="pull-right item-operation"><?php
+	    		echo $this->Html->link(
+	    			$this->Html->tag("i", "",array("class" => "icon-envelope icon-large")),
+	    			"mailto:".$res["Resume"]["email"],
+	    			array("class" => "btn", "escape" => false)
+	    		);		    		
 	    		if ($this->Session->check("uid") 
 	    				&&$this->Session->read("uid")===$res["Resume"]["user_id"]) {
 	    			echo $this->Html->link(
-						"编辑",
+						$this->Html->tag("i", "",array("class" => "icon-edit icon-large")),
 						array("controller" => "Resumes",
 							"action" => "edit",
 							$res["Resume"]["id"]
-						)
+						),
+	    				array("class" => "btn", "escape" => false)
 					);
-					echo "|";
 					echo $this->Html->link(
-							"删除",
-							array("controller" => "Resumes",
-									"action" => "remove",
-									$res["Resume"]["id"]
-							)
+						$this->Html->tag("i", "",array("class" => "icon-trash icon-large")),
+						array("controller" => "Resumes",
+							  "action" => "remove",
+							  $res["Resume"]["id"]
+						),
+	    				array("class" => "btn", "escape" => false)
 					);
 	    		}
-	       	?></td>    	    	
+		    ?></div></td>    	    	
 	    </tr>  
 	    <?php endforeach; ?>  
 	</table>
