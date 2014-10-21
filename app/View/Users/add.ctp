@@ -1,12 +1,14 @@
 ﻿<!-- File: /app/View/User/add.ctp -->
-<div class="span10">
-	<h3><?php
-		if ($isadmin) {
-			echo "添加新用户";
-		} else {
-			echo "注册新用户";
-		}
-	?></h3>
+<div class="span6">
+	<div class="page-header">
+		<h3><?php
+			if ($isadmin) {
+				echo "添加新用户";
+			} else {
+				echo "注册新用户";
+			}
+		?></h3>
+	</div>
 	<?php 
 		echo $this->Form->create("User", array(
 	        "action" => "add",
@@ -14,7 +16,6 @@
 	    ));
 		echo $this->Form->input("username", array(
 			"div" => "control-group",
-			"class" => "span6",
 			"label" => array(
 				"class" => "control-label",
 				"text" => "请输入用户名："
@@ -22,7 +23,6 @@
 		));
 		echo $this->Form->input("password", array(
 			"div" => "control-group",
-			"class" => "span6",
 			"label" => array(
 				"class" => "control-label",
 				"text" => "请输入密码："
@@ -30,7 +30,6 @@
 		));
 		echo $this->Form->input("password2", array(
 				"div" => "control-group",
-				"class" => "span6",
 				"type" => "password",
 				"label" => array(
 						"class" => "control-label",
@@ -39,7 +38,6 @@
 		));				
 		echo $this->Form->input("email", array(
 			"div" => "control-group",
-			"class" => "span6",
 			"label" => array(
 				"class" => "control-label",
 				"text" => "请输入电子邮件："

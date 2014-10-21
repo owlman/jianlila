@@ -1,14 +1,15 @@
  <!-- File: /app/View/Books/badd.ctp -->
-<div class="span10">
-	<h3>添加新作品</h3>
-	
+<div class="span7">
+	<div class="page-header">
+		<h3>添加新作品</h3>
+	</div>
 	<?php 
 		echo $this->Form->create("Book",array(			
 			"class" => "form-horizontal well"
 		));
 		echo $this->Form->input("bookname",array(
 			"div" => "control-group",
-			"class" => "span6",
+			"class" => "span4",
 			"label" => array(
 				"class" => "control-label",
 				"text" => "请输入书名："
@@ -16,10 +17,11 @@
 		));
 		echo $this->Form->input("pubdate", array(
 				"type" => "date",
-				"dateFormat" => "Y-M-D",
+				"dateFormat" => "YMD",
 				"minYear" => 1940,
 				"maxYear" => 2050,
-				"class" => "span2",
+				"monthNames" => false,
+				"class" => "span1",
 				"label" => array(
 					"class" => "control-label",
 					"text" => "出版日期："
@@ -27,7 +29,7 @@
 		));
 		echo $this->Form->input("description", array(
 				"type" => "textarea",
-				"class" => "span6",
+				"class" => "span4",
 				"label" => array(
 					"class" => "control-label",
 					"text" => "内容简介（可不填）："

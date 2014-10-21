@@ -1,21 +1,23 @@
  <!-- File: /app/View/Books/sadd.ctp -->
-<div class="span10">
-	<h3>添加新技能</h3>
-	
+<div class="span6">
+	<div class="page-header">
+		<h3>添加新技能</h3>	
+	</div>
 	<?php 
 		echo $this->Form->create("Skill",array(			
 			"class" => "form-horizontal well"
 		));
 		echo $this->Form->input("skillname",array(
 			"div" => "control-group",
-			"class" => "span6",
+			"class" => "span3",
 			"label" => array(
 				"class" => "control-label",
-				"text" => "请输入要添加的技能："
+				"text" => "新增技能："
 			)
 		));
 		echo $this->Form->input("level", array(
 				"empty" => "【请选择】",
+				"class" => "span3",
 				"options" => array(
 						"初学"=>"初学",
 						"熟悉"=>"熟悉",

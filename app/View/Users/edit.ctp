@@ -1,6 +1,8 @@
  <!-- File: /app/View/User/edit.ctp -->
-<div class="span10">
-	<h3>编辑 <?php echo $user["User"]["username"];?> 的用户信息：</h3>
+<div class="span6">
+	<div class="page-header">
+		<h3>编辑 <?=$user["User"]["username"];?> 的用户信息：</h3>
+	</div>
 	<?php 
 		echo $this->Form->create("User", array(
 	        "action" => "edit",
@@ -8,7 +10,6 @@
 	    ));
 		echo $this->Form->input("username", array(
 			"div" => "control-group",
-			"class" => "span6",
 			"label" => array(
 				"class" => "control-label",
 				"text" => "用户名："
@@ -16,17 +17,22 @@
 		));
 		echo $this->Form->input("password", array(
 			"div" => "control-group",
-			"class" => "span6",					
-			"type" => "text",
-			"class" => "span6",
 			"label" => array(
 				"class" => "control-label",
 				"text" => "修改密码："
 			)
 		));
+		echo $this->Form->input("password2", array(
+			"div" => "control-group",
+			"type" => "password",
+			"label" => array(
+				"class" => "control-label",
+				"text" => "确认密码："
+			)
+		));
+		
 		echo $this->Form->input("email", array(
 			"div" => "control-group",
-			"class" => "span6",
 			"label" => array(
 				"class" => "control-label",
 				"text" => "电子邮件："

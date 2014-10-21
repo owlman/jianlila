@@ -1,8 +1,9 @@
 <!-- File: /app/View/Experiences/expadd.ctp -->
 
-<div class="span10">
-	<h3>添加新职务</h3>
-	
+<div class="span7">
+	<div class="page-header">
+		<h3>添加新职务</h3>
+	</div>
 	<?php 
 		echo $this->Form->create("Experience",array(			
 			"class" => "form-horizontal well"
@@ -10,7 +11,7 @@
 
 		echo $this->Form->input("title",array(
 				"div" => "control-group",
-				"class" => "span6",
+				"class" => "span4",
 				"label" => array(
 						"class" => "control-label",
 						"text" => "请输入您的职务："
@@ -18,7 +19,7 @@
 		));
 		echo $this->Form->input("company",array(
 			"div" => "control-group",
-			"class" => "span6",
+			"class" => "span4",
 			"label" => array(
 				"class" => "control-label",
 				"text" => "请输入您就职的公司："
@@ -26,10 +27,11 @@
 		));
 		echo $this->Form->input("in_date", array(
 				"type" => "date",
-				"dateFormat" => "Y-M-D",
+				"dateFormat" => "YMD",
 				"minYear" => 1940,
 				"maxYear" => 2050,
-				"class" => "span2",
+				"monthNames" => false,
+				"class" => "span1",
 				"label" => array(
 					"class" => "control-label",
 					"text" => "入职日期："
@@ -37,10 +39,11 @@
 		));
 		echo $this->Form->input("out_date", array(
 				"type" => "date",
-				"dateFormat" => "Y-M-D",
+				"dateFormat" => "YMD",
 				"minYear" => 1940,
 				"maxYear" => 2050,
-				"class" => "span2",
+				"monthNames" => false,
+				"class" => "span1",
 				"label" => array(
 						"class" => "control-label",
 						"text" => "辞职日期："
@@ -48,7 +51,7 @@
 		));
 		echo $this->Form->input("description", array(
 				"type" => "textarea",
-				"class" => "span6",
+				"class" => "span4",
 				"label" => array(
 					"class" => "control-label",
 					"text" => "补充说明（可不填）："

@@ -1,7 +1,8 @@
  <!-- File: /app/View/Educations/eduedit.ctp -->
-<div class="span10">
-	<h3>编辑学历信息</h3>
-	
+<div class="span7">
+	<div class="page-header">
+		<h3>编辑学历信息</h3>
+	</div>
 	<?php 
 		echo $this->Form->create("Education",array(			
 			"class" => "form-horizontal well"
@@ -23,7 +24,7 @@
 		));
 		echo $this->Form->input("school",array(
 			"div" => "control-group",
-			"class" => "span6",
+			"class" => "span4",
 			"label" => array(
 				"class" => "control-label",
 				"text" => "您就读的学校："
@@ -31,7 +32,7 @@
 		));
 		echo $this->Form->input("study",array(
 				"div" => "control-group",
-				"class" => "span6",
+				"class" => "span4",
 				"label" => array(
 						"class" => "control-label",
 						"text" => "您所学的专业："
@@ -39,10 +40,11 @@
 		));
 		echo $this->Form->input("in_date", array(
 				"type" => "date",
-				"dateFormat" => "Y-M-D",
+				"dateFormat" => "YMD",
 				"minYear" => 1940,
 				"maxYear" => 2050,
-				"class" => "span2",
+				"monthNames" => false,
+				"class" => "span1",
 				"label" => array(
 					"class" => "control-label",
 					"text" => "入学日期："
@@ -50,10 +52,11 @@
 		));
 		echo $this->Form->input("out_date", array(
 				"type" => "date",
-				"dateFormat" => "Y-M-D",
+				"dateFormat" => "YMD",
 				"minYear" => 1940,
 				"maxYear" => 2050,
-				"class" => "span2",
+				"monthNames" => false,
+				"class" => "span1",
 				"label" => array(
 						"class" => "control-label",
 						"text" => "毕业日期："
@@ -61,7 +64,7 @@
 		));
 		echo $this->Form->input("description", array(
 				"type" => "textarea",
-				"class" => "span6",
+				"class" => "span4",
 				"label" => array(
 					"class" => "control-label",
 					"text" => "补充说明（可不填）："

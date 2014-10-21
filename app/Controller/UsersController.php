@@ -127,7 +127,15 @@ class UsersController extends AppController {
 		
 		if ($this->request->is( "get" )) {
 			$this->request->data = $this->User->read();
+			$this->request->data["User"]["password2"] 
+				= $this->request->data["User"]["password"];
 		} else {
+			if ($this->request->data["User"]["password"]
+					!== $this->request->data["User"]["password2"]){
+				$this->Session->setFlash("您输入的密码不一致，请重新输入!");
+				return ;
+			}
+			
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash ( "已经成功保存信息！" );
 				$this->redirect (array("action" => "ulist"));
