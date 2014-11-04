@@ -16,6 +16,11 @@
 			"label" => "密  码：",
 			"class" => "input-block-level"
 		));
+		$check = $this->Form->checkbox("rememberMe");
+		$label = $this->Form->label("rememberMe",$check."记住我", array(
+				"class" => "checkbox inline"
+		));		
+		echo $this->Html->div("control-group",$label);
 		echo $this->Form->submit("登录", array(
 			"class" => "btn btn-primary",
 				"div" => false
@@ -28,7 +33,7 @@
 			array(
 				"class" => "btn"
 			)
-		);
+		);		
 		echo $this->Form->end();
 	?>
 </div>

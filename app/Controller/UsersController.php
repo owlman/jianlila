@@ -7,8 +7,62 @@ class UsersController extends AppController {
 			"Js"
 	);
 	public $components = array (
-			"Session" 
-	);
+			"Session",
+			"Cookie" 
+	);	
+		
+	// 用户登录
+	public function login() {
+		if ($this->request->is("post")) {
+			if (!empty($this->data)) {
+				$someone = $this->User->findByUsername($this->data["User"]["username"]);
+	
+				if (!empty($someone["User"]["password"])
+						&& $someone["User"]["password"] === $this->data["User"]["password"])
+				{
+					$this->Session->write("uid", $someone["User"]["id"]);
+					$this->Session->write("isadmin",$someone["User"]["isadmin"]);
+					$this->Session->write("username",$someone["User"]["username"]);
+					
+					if ($this->data["User"]["rememberMe"]) {
+						$this->Cookie->write("user.id",$someone["User"]["id"]);
+						$this->Cookie->write("user.isadmin",$someone["User"]["isadmin"]);
+						$this->Cookie->write("user.name",$someone["User"]["username"]);	
+						//$this->Session->setFlash($this->Cookie->read("user.id"));
+					}
+	
+					$this->redirect( array (
+							"action" => "message",
+							$someone["User"]["id"]
+					));
+				} else {
+					$this->Session->setFlash("用户名或密码错误！");
+				}
+			}
+		}
+	}
+	
+	// 用户登出
+	public function logout() {
+		if ($this->Session->check("uid")) {
+			$this->Session->delete("isadmin");
+			$this->Session->delete("username");
+			$this->Session->delete("uid");
+			$this->Session->destroy();
+			
+			if ($this->Cookie->check("user.id"))
+			{
+				$this->Cookie->delete("user.name");
+				$this->Cookie->delete("user.isadmin");
+				$this->Cookie->delete("user.id");
+				$this->Cookie->destroy();
+			}
+			
+			$this->redirect ( array (
+					"action" => "index"
+			));
+		}
+	}	
 	
 	// 用户列表
 	public function ulist() {
@@ -188,45 +242,7 @@ class UsersController extends AppController {
 			$this->redirect(array("action" => "ulist"));	
 		}
 	}
-	
-	// 用户登录
-	public function login() {
-		if ($this->request->is("post")) {
-			if (!empty($this->data)) {
-				$someone = $this->User->findByUsername($this->data["User"]["username"]);
-				
-				if (!empty($someone["User"]["password"]) 
-					&& $someone["User"]["password"] === $this->data["User"]["password"])
-				{
-					$this->Session->write("uid", $someone["User"]["id"]);
-					$this->Session->write("isadmin",$someone["User"]["isadmin"]);
-					$this->Session->write("username",$someone["User"]["username"]);
-						
-					$this->redirect( array (
-							"action" => "message",
-							$someone["User"]["id"] 
-					));
-					//$this->Js->redirect("javascript:history.back(-1)");
-				} else {
-					$this->Session->setFlash("用户名或密码错误！");
-				}
-			}
-		}
-	}
-	
-	// 用户登出
-	public function logout() {
-		if ($this->Session->check("uid")) {
-			$this->Session->delete("isadmin");
-			$this->Session->delete("username");
-			$this->Session->delete("uid");
-			$this->Session->destroy();
-			$this->redirect ( array (
-					"action" => "index" 
-			));
-		}
-	}
-	
+		
 	public function index() {
 		if ($this->Session->check("uid")) {
 			$this->redirect( array (

@@ -11,8 +11,21 @@ class PagesController extends AppController {
 	public $uses = array ();		
 
 	public $components = array (
-			"Session"
-	);	
+			"Session",
+			"Cookie"
+	);
+	
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Cookie->name = "user";
+		$this->Cookie->time =  "7 Days";
+		if($this->Cookie->check("user.id")) {
+			$this->Session->write("uid", $this->Cookie->read("user.id"));
+			$this->Session->write("isadmin", $this->Cookie->read("user.isadmin"));
+			$this->Session->write("username", $this->Cookie->read("user.name"));
+		}
+	}
+	
 	/**
 	 * Displays a view
 	 *
@@ -22,7 +35,7 @@ class PagesController extends AppController {
 	 * @throws NotFoundException When the view file could not be found
 	 *         or MissingViewException in debug mode.
 	 */
-	public function display() {
+	public function display() {		
 		$path = func_get_args ();
 		
 		$count = count ( $path );
@@ -50,10 +63,6 @@ class PagesController extends AppController {
 			}
 			throw new NotFoundException ();
 		}
-	}
-	
-	public function test() {
-		
 	}
 };
 ?>
