@@ -1,6 +1,6 @@
 项目说明
 ====== 
-本项目是一个线上简历系统，用户可以根据自身填写的学历、技能、职业生涯、出版作品等信息来定制各种针对不同申请对象的简历。
+本项目是一个线上简历系统的demo，用户可以根据自身填写的学历、技能、职业生涯、出版作品等信息来定制各种针对不同申请对象的简历。
 
 开发环境
 ------
@@ -13,7 +13,7 @@
 部署方法
 ------ 
 + 先将本站源码下载到某一指定目录中（例如当前用户的home目录）：  
-	<code> git clone git@vps.owlman.org:jianlila.git  （密码是八个0）</code>  
+	<code> git clone git@github.com:owlman/jianlila.git</code>  
 	然后。在程序根目录的app目录下创建一个tmp目录，并赋予其www-data权限:  
 	<code>cd jianlila  
 	    mkdir app/tmp  
