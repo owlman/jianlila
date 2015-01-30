@@ -14,6 +14,8 @@
 ------ 
 + 先将本站源码下载到某一指定目录中（例如当前用户的home目录）：  
 	<code> git clone git@github.com:owlman/jianlila.git</code>  
+	中国大陆用户可以也可以：
+	<code> git clone git@gitcafe.com:owlman/jianlila.git</code>  
 	然后。在程序根目录的app目录下创建一个tmp目录，并赋予其www-data权限:  
 	<code>cd jianlila  
 	    mkdir app/tmp  
