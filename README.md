@@ -24,3 +24,10 @@
 + 最后，在mysql中创建一个数据库，并导入vhost_etc/jianlila.sql备份文件，然后修改app/Config/database.php文件中的数据库帐号和密码.
 + （*可选*）如果以上步骤一切顺利，该网站应该已经可以运行，如果觉得速度不理想，建议安装eAccelerator加速器，我的使用经验是可以提升两倍左右的速度 ，以下是该加速器的项目地址：
 https://github.com/eaccelerator/eaccelerator
+
+联系方式
+------
+如果您对该项目有兴趣，或者有任何意见，可以用以下任何一种方式联系我：
++ E-mail: lingjiexyz@hotmail.com
++ weibo: 凌杰_owlman
++ twitter: @lingjieowl
